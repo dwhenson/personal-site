@@ -1,0 +1,53 @@
+
+<article class="project">
+  <picture class="project-hero">
+    <source
+      srcset="{{ item.data.project.hero.desktop }}"
+      media="(min-width: 65em)" />
+    <source
+      srcset="{{ item.data.project.hero.tablet }}"
+      media="(min-width: 40em)" />
+    <img
+      src="{{ item.data.project.hero.mobile }}"
+      width="622"
+      height="280"
+      alt="{{ item.data.title }} landing page" />
+  </picture>
+  <header class="[ project-intro ] [ borders ]">
+    <h2 class="h1">{{ item.data.title }}</h2>
+    <p class="roles">{{ item.data.roles }}</p>
+    <p class="summary">{{ item.data.summary }}</p>
+    <a href="{{ item.data.external }}" class="button">Visit Website</a>
+  </header>
+  <section class="flow-content">
+    <h3 class="h2">Project Background</h3>
+    <p>{{ item.data.background }}</p>
+    <h3 class="h2">Static Previews</h3>
+    <picture>
+      <source
+        srcset="{{ item.data.project.previews.desktop.one }}"
+        media="(min-width: 65em)" />
+      <source
+        srcset="{{ item.data.project.previews.tablet.one }}"
+        media="(min-width: 40em)" />
+      <img
+        src="{{ item.data.project.previews.mobile.one }}"
+        width="622"
+        height="392"
+        alt="{{ item.data.title }} landing page" />
+    </picture>
+    <picture>
+      <source
+        srcset="{{ item.data.project.previews.desktop.two }}"
+        media="(min-width: 65em)" />
+      <source
+        srcset="{{ item.data.project.previews.tablet.two }}"
+        media="(min-width: 40em)" />
+      <img
+        src="{{ item.data.project.previews.mobile.two }}"
+        width="622"
+        height="392"
+        alt="{{ item.data.title }} landing page" />
+    </picture>
+  </section>
+</article>

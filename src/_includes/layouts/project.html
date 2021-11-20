@@ -1,0 +1,10 @@
+{% extends "layouts/base.html" %}
+{% set pageCriticalStyles = ['css/project.css'] %}
+
+{% block content %}
+{%- for item in pagination.items %}
+  {% include "partials/project-item.html" %}
+  {% include "partials/pagination.html" %}
+{% endfor -%}
+
+{% endblock %}
