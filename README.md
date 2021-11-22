@@ -1,4 +1,4 @@
-# Dave Henson - Personal Site
+# Personal Site
 
 ## Objectives
 

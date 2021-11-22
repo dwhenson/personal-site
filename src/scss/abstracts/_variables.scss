@@ -3,12 +3,68 @@
 
 :root {
   /* Colors */
-  --clr-primary-100: hsla(167, 36%, 52%, 1);
-  --clr-primary-200: hsla(205, 41%, 21%, 1);
+  --clr-primary-100: #0766e7;
+  --clr-primary-200: #1c1aaf;
   --clr-primary-300: hsla(245, 10%, 22%, 1);
   --clr-secondary-100: hsla(0, 0%, 98%, 1);
   --clr-secondary-200: hsla(240, 3%, 92%, 1);
   --clr-error-100: hsla(0, 90%, 57%, 1);
+
+  /* Colors */
+  --clr-primary-100: hsl(204.49, 92.453%, 89.608%);
+  --clr-primary-200: hsl(206.94, 94.231%, 79.608%);
+  --clr-primary-300: hsl(209.17, 90%, 68.627%);
+  --clr-primary-400: hsl(211.89, 85.366%, 59.804%);
+  --clr-primary-500: hsl(214.55, 94.118%, 46.667%);
+  --clr-primary-600: hsl(217.31, 95.074%, 39.804%);
+  --clr-primary-700: hsl(219.75, 96.45%, 33.137%);
+  --clr-primary-800: hsl(222.14, 97.037%, 26.471%);
+  --clr-primary-900: hsl(225.14, 98.198%, 21.765%);
+  --clr-secondary-100: hsl(241.4, 84.314%, 90%);
+  --clr-secondary-200: hsl(241.41, 84.158%, 80.196%);
+  --clr-secondary-300: hsl(241.01, 71.257%, 67.255%);
+  --clr-secondary-400: hsl(240.9, 58.079%, 55.098%);
+  --clr-secondary-500: hsl(240.81, 74.129%, 39.412%);
+  --clr-secondary-600: hsl(240.46, 77.515%, 33.137%);
+  --clr-secondary-700: hsl(240.54, 81.159%, 27.059%);
+  --clr-secondary-800: hsl(240.65, 85.321%, 21.373%);
+  --clr-secondary-900: hsl(240.76, 90.805%, 17.059%);
+  --clr-tertiary-100: hsl(53.75, 100%, 90.588%);
+  --clr-tertiary-200: hsl(53.053, 100%, 81.373%);
+  --clr-tertiary-300: hsl(52.394, 100%, 72.157%);
+  --clr-tertiary-400: hsl(51.525, 100%, 65.294%);
+  --clr-tertiary-500: hsl(50.593, 100%, 53.725%);
+  --clr-tertiary-600: hsl(49.515, 88.793%, 45.49%);
+  --clr-tertiary-700: hsl(48.621, 90.625%, 37.647%);
+  --clr-tertiary-800: hsl(47.66, 92.157%, 30%);
+  --clr-tertiary-900: hsl(46.891, 95.2%, 24.51%);
+  // --clr-quaternary-100: hsl(42.857, 96.078%, 90%);
+  // --clr-quaternary-200: hsl(39.796, 96.078%, 80%);
+  // --clr-quaternary-300: hsl(36.828, 93.548%, 69.608%);
+  // --clr-quaternary-400: hsl(33.708, 90.816%, 61.569%);
+  // --clr-quaternary-500: hsl(30.776, 92.8%, 49.02%);
+  // --clr-quaternary-600: hsl(27.761, 94.366%, 41.765%);
+  // --clr-quaternary-700: hsl(24.852, 95.48%, 34.706%);
+  // --clr-quaternary-800: hsl(22.336, 97.163%, 27.647%);
+  // --clr-quaternary-900: hsl(18.947, 98.276%, 22.745%);
+  --clr-error-100: hsl(19.592, 89.091%, 89.216%);
+  --clr-error-200: hsl(13.608, 90.654%, 79.02%);
+  --clr-error-300: hsl(8.5106, 84.431%, 67.255%);
+  --clr-error-400: hsl(3.2335, 76.256%, 57.059%);
+  --clr-error-500: hsl(357.66, 93.607%, 42.941%);
+  --clr-error-600: hsl(352.54, 94.652%, 36.667%);
+  --clr-error-700: hsl(347.11, 96.129%, 30.392%);
+  --clr-error-800: hsl(341.5, 96.774%, 24.314%);
+  --clr-error-900: hsl(336.6, 98.039%, 20%);
+  --clr-neutral-100: hsla(0, 0%, 92%, 1);
+  --clr-neutral-200: hsla(0, 3%, 82%, 1);
+  --clr-neutral-300: hsla(0, 3%, 72%, 1);
+  --clr-neutral-400: hsla(0, 3%, 62%, 1);
+  --clr-neutral-500: hsla(0, 3%, 52%, 1);
+  --clr-neutral-600: hsla(0, 3%, 42%, 1);
+  --clr-neutral-700: hsla(0, 3%, 32%, 1);
+  --clr-neutral-800: hsla(0, 3%, 22%, 1);
+  --clr-neutral-900: hsla(0, 3%, 12%, 1);
 
   /* Spacing */
   --spacer: 1em;
