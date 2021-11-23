@@ -21,12 +21,13 @@
   a {
     display: block;
     transition: color 150ms;
+    font-weight: 700;
     text-align: center;
 
     &:hover,
     &[data-state="active"],
     &[aria-current="page"] {
-      color: var(--clr-primary-100);
+      color: var(--clr-tertiary-500);
     }
   }
 }

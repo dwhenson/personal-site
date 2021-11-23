@@ -4,13 +4,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  letter-spacing: normal;
   padding-block-start: 0;
   padding-block-end: 0;
+  letter-spacing: normal;
 }
 
 .h2 {
-  font-family: "Ibarra Real Nova", serif;
+  font-family: "BioRhyme", sans-serif;
   text-transform: none;
 }
 
@@ -44,11 +44,16 @@
   }
 
   &:hover * {
-    color: var(--clr-primary-100);
+    color: var(--clr-primary-500);
+  }
+
+  &:active * {
+    color: var(--clr-tertiary-500);
   }
 }
 
 .paginate:last-of-type {
+  // FIXME what is this for?
   border-inline-start: 1px solid var(--clr-secondary-200);
   text-align: end;
 }
