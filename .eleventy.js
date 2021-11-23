@@ -1,9 +1,6 @@
 module.exports = (config) => {
   const sortByDisplayOrder = require("./src/utils/sort-by-display-order.js");
 
-  // Pass through fonts
-  config.addPassthroughCopy("./src/fonts/");
-
   // Transforms
   const htmlMinTransform = require("./src/transforms/html-min-transform.js");
 
