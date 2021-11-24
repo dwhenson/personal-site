@@ -59,7 +59,6 @@
   inline-size: calc(100% - 2em + 4px);
   block-size: 100%;
   padding-block-start: max(8vh, 2rem);
-  border-radius: 0.5rem;
   overflow-y: auto;
   padding-inline: clamp(1rem, 2.5%, 2rem);
   -webkit-overflow-scrolling: touch;
@@ -68,6 +67,7 @@
 // Hamburger menu panel content size and positioning
 .burger-menu[enabled="true"] .navigation {
   padding: 2rem;
+  border-radius: 0.5rem;
   box-shadow: var(--shadow-elevation-medium);
   background-color: var(--clr-primary-500);
 

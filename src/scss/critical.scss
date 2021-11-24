@@ -22,12 +22,13 @@ h1,
 h2,
 h3 {
   font-family: "BioRhyme", sans-serif;
-  color: var(--clr-primary-600);
+  color: var(--clr-primary-500);
 }
 
 h1,
 .h1 {
   font-size: var(--step-4);
+  color: var(--clr-primary-600);
 }
 
 h2,
@@ -48,7 +49,7 @@ a {
 
 img {
   border-radius: 0.5rem;
-  box-shadow: var(--shadow-elevation-low);
+  box-shadow: var(--shadow-elevation-medium);
 }
 
 /* ==================================================

@@ -21,8 +21,9 @@
     padding-inline-end: clamp(1rem, 5%, 2rem);
     border: 3px solid var(--clr-primary-500);
     border-radius: 0.5rem;
+    box-shadow: var(--shadow-elevation-low);
     margin-block-start: 0.5em;
-    background-color: var(--clr-secondary-300);
+    background-color: var(--clr-secondary-200);
 
     &::placeholder {
       font-weight: 400;
@@ -45,12 +46,12 @@
   }
 
   .error {
-    outline: 3px solid var(--clr-tertiary-500);
+    outline: 3px solid var(--clr-tertiary-700);
   }
 
   .error-message {
     font-size: 1em;
     line-height: 1;
-    color: var(--clr-tertiary-500);
+    color: var(--clr-tertiary-700);
   }
 }
