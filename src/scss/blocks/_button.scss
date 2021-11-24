@@ -13,6 +13,7 @@
   font-weight: 700;
   letter-spacing: 1px;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   color: var(--fg, var(--clr-primary-500));
   cursor: pointer;
@@ -58,7 +59,7 @@
   overflow: hidden;
 
   &::before {
-    content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='16' height='14'><g fill='none' fill-rule='evenodd' stroke='hsla(0, 0%, 98%, 1)'><path d='M0 9l8 4 8-4'/><path opacity='.5' d='M0 5l8 4 8-4'/><path opacity='.25' d='M0 1l8 4 8-4'/></g></svg>");
+    content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='16' height='14'><g fill='none' fill-rule='evenodd' stroke='hsla(50.593, 100%, 53.725%)'><path d='M0 9l8 4 8-4'/><path opacity='.5' d='M0 5l8 4 8-4'/><path opacity='.25' d='M0 1l8 4 8-4'/></g></svg>");
     position: absolute;
     display: grid;
     inset-block-start: 0;

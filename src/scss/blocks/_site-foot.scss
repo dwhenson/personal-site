@@ -21,6 +21,7 @@
       display: block;
       transition: color 150ms;
       text-align: center;
+      color: var(--clr-neutral-100);
 
       &:hover {
         color: var(--clr-secondary-500);
@@ -28,13 +29,18 @@
     }
   }
 
-  .logo path {
+  .logo svg {
+    inline-size: 5rem;
+    block-size: 4rem;
+  }
+
+  .logo g {
     transition: fill 150ms;
     fill: var(--clr-neutral-100);
+  }
 
-    &:hover {
-      fill: var(--clr-secondary-500);
-    }
+  .logo:hover g {
+    fill: var(--clr-secondary-500);
   }
 
   .socials path {

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>{{ title if title else pagination.items[0].template.parsed.name | capitalize }} - {{ site.name }}</title>
-
+  <link rel="icon" href="../../images/favicon-dwh.png">
   <style>{% include "css/critical.css" %}</style>
 
   {# Add facility for pages to declare an array of critical styles #}
@@ -25,6 +25,7 @@
       <link rel="stylesheet" media="print" href="{{ item }}?{{ assetHash }}" onload="this.media='all'" />
     {% endfor %}
   {% endif %}
+  <link rel="canonical" href="{{ currentUrl }}" />
 
 <script src="../../js/main.js" defer></script>
 {% if formValidation %}

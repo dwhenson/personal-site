@@ -16,9 +16,14 @@
       background-color: var(--clr-neutral-100);
 
       .name {
+        transition: color 150ms;
         text-decoration: underline;
         text-transform: initial;
         color: var(--clr-tertiary-500);
+
+        &:hover {
+          color: var(--clr-secondary-500);
+        }
       }
 
       span {

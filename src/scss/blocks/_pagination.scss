@@ -11,7 +11,7 @@
 
 .h2 {
   transition: color 150ms;
-  font-family: "BioRhyme", sans-serif;
+  font-family: "BioRhyme", "Georgia", sans-serif;
   text-transform: none;
   color: var(--clr-primary-500);
 }
@@ -28,6 +28,7 @@
   flex: 1 1 0;
   padding-block-start: clamp(1rem, 5%, 2rem);
   padding-block-end: clamp(1rem, 5%, 2rem);
+  text-decoration: none;
 
   @include respond-to("medium") {
     padding-inline: clamp(1rem, 5%, 2rem);

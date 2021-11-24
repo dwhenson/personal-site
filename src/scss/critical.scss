@@ -12,7 +12,7 @@
 body {
   overflow-x: hidden;
   background-color: var(--clr-neutral-100);
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", "Arial", sans-serif;
   font-size: var(--step-0);
   font-weight: 500;
   color: var(--clr-neutral-900);
@@ -21,7 +21,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "BioRhyme", sans-serif;
+  font-family: "BioRhyme", "Georgia", serif;
   color: var(--clr-primary-500);
 }
 
@@ -40,11 +40,21 @@ h3 {
   font-size: var(--step-1);
 }
 
-a {
+a:not([class]) {
+  transition: color 150ms;
+  font-weight: 700;
+  color: var(--clr-primary-500);
+
+  &:hover {
+    color: var(--clr-tertiary-500);
+  }
+}
+
+nav a {
   letter-spacing: 0.5px;
   text-decoration: none;
   text-transform: uppercase;
-  color: inherit;
+  // color: inherit;
 }
 
 img {
