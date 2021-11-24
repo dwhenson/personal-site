@@ -10,8 +10,7 @@
 }
 
 .about-text {
-  @include respond-to("medium") {
-  }
+  scroll-margin-top: 3rem;
 }
 
 .about-text,

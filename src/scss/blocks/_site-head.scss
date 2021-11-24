@@ -5,12 +5,12 @@
 }
 
 .site-head__inner {
-  --bespoke-gap: calc(var(--spacer) * 2.5);
+  // --bespoke-gap: calc(var(--spacer) * 2);
   flex-direction: row;
 }
 
 .logo {
-  max-inline-size: min-content;
+  // max-inline-size: min-content;
 }
 
 .logo path {
@@ -29,6 +29,7 @@
 
   a {
     display: block;
+    min-inline-size: 10ch;
     transition: color 150ms;
     font-weight: 700;
     text-align: center;

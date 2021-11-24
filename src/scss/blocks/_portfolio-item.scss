@@ -5,10 +5,6 @@
     li:nth-of-type(even) {
       flex-direction: row-reverse;
     }
-
-    li:nth-of-type(odd) {
-      --bd-util: var(--clr-tertiary-500);
-    }
   }
 
   @include respond-to("large") {
@@ -19,6 +15,10 @@
     li:nth-of-type(even) {
       margin-inline-start: clamp(2.5rem, 15%, 5rem);
     }
+  }
+
+  li:nth-of-type(odd) {
+    --bd-util: var(--clr-tertiary-500);
   }
 }
 

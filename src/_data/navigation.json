@@ -5,11 +5,11 @@
       "url": "/"
     },
     {
-      "text": "Portfolio",
-      "url": "/portfolio/"
+      "text": "Projects",
+      "url": "/projects/"
     },
     {
-      "text": "Contact Me",
+      "text": "Contact",
       "url": "/contact/"
     }
   ]
