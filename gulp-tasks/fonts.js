@@ -13,7 +13,7 @@ const fonts = async () => {
     // "https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,700;1,400&family=Red+Hat+Display:wght@400;900"
     // "https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Inria+Serif:wght@400;700"
     // "https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700"
-    "https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700"
+    "https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Work+Sans:ital,wght@0,500;0,700;1,500;1,700"
   );
   return result;
 };

@@ -2,6 +2,10 @@
   display: grid;
   gap: var(--spacer);
 
+  img {
+    box-shadow: none;
+  }
+
   @include respond-to("medium") {
     .hero-image,
     .hero-text {
