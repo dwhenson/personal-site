@@ -19,17 +19,17 @@
   padding-inline: 1.5em;
 
   &:hover {
-    --bd: var(--clr-primary-400);
-    --bg: var(--clr-secondary-300);
-    --fg: var(--clr-primary-400);
+    --bd: var(--clr-secondary-500);
+    --bg: var(--clr-primary-500);
+    --fg: var(--clr-secondary-500);
 
     transform: scale(1.05);
   }
 
   &:active {
-    --bd: var(--clr-secondary-500);
-    --bg: var(--clr-tertiary-500);
-    --fg: var(--clr-secondary-500);
+    --bd: var(--clr-primary-400);
+    --bg: var(--clr-secondary-300);
+    --fg: var(--clr-primary-400);
   }
 }
 
@@ -40,14 +40,14 @@
 
   &:hover {
     --bd: var(--clr-neutral-100);
-    --bg: var(--clr-tertiary-500);
+    --bg: var(--clr-primary-500);
     --fg: var(--clr-neutral-100);
 
     transform: scale(1.05);
   }
 
   &:active {
-    --bg: var(--clr-tertiary-400);
+    --bg: var(--clr-secondary-400);
     --fg: var(--clr-primary-500);
     --bd: var(--clr-primary-500);
   }
@@ -74,14 +74,14 @@
 
   &:hover {
     &::before {
-      content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='16' height='14'><g fill='none' fill-rule='evenodd' stroke='hsla(0, 0%, 98%, 1)'><path d='M0 9l8 4 8-4'/><path opacity='.5' d='M0 5l8 4 8-4'/><path opacity='.25' d='M0 1l8 4 8-4'/></g></svg>");
-      background-color: var(--clr-primary-300);
+      content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='16' height='14'><g fill='none' fill-rule='evenodd' stroke='hsl(50.593, 100%, 53.725%)'><path d='M0 9l8 4 8-4'/><path opacity='.5' d='M0 5l8 4 8-4'/><path opacity='.25' d='M0 1l8 4 8-4'/></g></svg>");
+      background-color: var(--clr-primary-500);
     }
   }
 
   &:active {
     &::before {
-      content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='16' height='14'><g fill='none' fill-rule='evenodd' stroke='hsla(215, 94%, 46%, 1)'><path d='M0 9l8 4 8-4'/><path opacity='.5' d='M0 5l8 4 8-4'/><path opacity='.25' d='M0 1l8 4 8-4'/></g></svg>");
+      content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='16' height='14'><g fill='none' fill-rule='evenodd' stroke='hsl(214.55, 94.118%, 46.667%)'><path d='M0 9l8 4 8-4'/><path opacity='.5' d='M0 5l8 4 8-4'/><path opacity='.25' d='M0 1l8 4 8-4'/></g></svg>");
       background-color: var(--clr-tertiary-400);
     }
   }
