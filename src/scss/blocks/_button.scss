@@ -74,8 +74,8 @@
 
   &:hover {
     &::before {
-      content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='16' height='14'><g fill='none' fill-rule='evenodd' stroke='hsl(50.593, 100%, 53.725%)'><path d='M0 9l8 4 8-4'/><path opacity='.5' d='M0 5l8 4 8-4'/><path opacity='.25' d='M0 1l8 4 8-4'/></g></svg>");
-      background-color: var(--clr-secondary-500);
+      content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='16' height='14'><g fill='none' fill-rule='evenodd' stroke='hsl(214.55, 94.118%, 46.667%)'><path d='M0 9l8 4 8-4'/><path opacity='.5' d='M0 5l8 4 8-4'/><path opacity='.25' d='M0 1l8 4 8-4'/></g></svg>");
+      background-color: var(--clr-secondary-400);
     }
   }
 
