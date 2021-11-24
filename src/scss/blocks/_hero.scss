@@ -2,10 +2,6 @@
   display: grid;
   gap: var(--spacer);
 
-  img {
-    box-shadow: none;
-  }
-
   @include respond-to("medium") {
     .hero-image,
     .hero-text {
@@ -18,6 +14,20 @@
       padding-block-start: clamp(1rem, 5%, 2rem);
       padding-inline-end: clamp(1rem, 5%, 2rem);
       background-color: var(--clr-neutral-100);
+
+      .name {
+        text-decoration: underline;
+        text-transform: initial;
+        color: var(--clr-tertiary-500);
+      }
+
+      span {
+        color: var(--clr-tertiary-500);
+      }
     }
+  }
+
+  img {
+    box-shadow: none;
   }
 }

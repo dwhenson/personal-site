@@ -5,6 +5,10 @@
   align-items: center;
   justify-content: flex-start;
 
+  a {
+    display: block;
+  }
+
   path {
     fill: var(--clr-tertiary-500);
     transition: fill 150ms;

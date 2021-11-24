@@ -5,19 +5,19 @@
   z-index: 100000;
   display: inline-block;
   inset-block-start: 1rem;
+  inset-inline-start: 1rem;
   padding: 0.7rem 1rem 0.5rem;
-  outline: 3px dotted black;
-  background-color: black;
+  outline: 3px dashed var(--clr-tertiary-500);
+  background-color: var(--clr-tertiary-500);
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
-  inset-inline-start: 1rem;
+  color: var(--clr-neutral-100);
 }
 
 .skip-link:hover {
-  background: white;
-  color: black;
+  background: var(--clr-neutral-100);
+  color: var(--clr-tertiary-500);
 }
 
 .skip-link:not(:focus) {
