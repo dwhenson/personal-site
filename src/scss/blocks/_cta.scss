@@ -17,11 +17,15 @@
       inline-size: 100%;
       block-size: 3px;
       border: 0;
-      background-color: var(--clr-secondary-300);
+      background-color: var(--clr-secondary-500);
     }
 
     a {
       flex: 0 0 auto;
     }
+  }
+
+  .h1 {
+    color: var(--clr-tertiary-500);
   }
 }

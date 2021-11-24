@@ -23,7 +23,7 @@
       text-align: center;
 
       &:hover {
-        color: var(--clr-tertiary-500);
+        color: var(--clr-secondary-500);
       }
     }
   }
@@ -33,7 +33,16 @@
     fill: var(--clr-neutral-100);
 
     &:hover {
-      fill: var(--clr-tertiary-500);
+      fill: var(--clr-secondary-500);
     }
+  }
+
+  .socials path {
+    fill: var(--clr-neutral-100);
+    transition: fill 150ms;
+  }
+
+  .socials li:hover path {
+    fill: var(--clr-secondary-500);
   }
 }
