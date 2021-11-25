@@ -1,5 +1,5 @@
 ---
-title: Cheap n’comfy-coding
+title: Cheap and comfy-coding
 sub-title: Getting set up for coding on the cheap
 date: 2018-10-17
 tags: ["Learning"]
