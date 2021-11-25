@@ -1,5 +1,5 @@
 ---
 title: "Home"
-metaDesc: "A junior front-end developer looking for a new role in an exciting company."
+metaDesc: "A self-taught front-end developer looking for a role where I can grow and learn."
 layout: "layouts/home.html"
 ---

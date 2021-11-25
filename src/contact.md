@@ -2,7 +2,7 @@
 title: "Contact"
 layout: "layouts/contact.html"
 contactCTA:
-  text: <span class='accent'>Thanks</span> for getting in touch.
-  buttonText: View Projects
-  buttonUrl: /projects/
+  text: Can't <span class='accent'>be bothered</span> filling in a form?
+  buttonText: Email Me
+  buttonUrl: mailto:dave.henson@gmail.com
 ---
