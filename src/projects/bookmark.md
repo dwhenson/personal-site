@@ -1,17 +1,13 @@
 ---
 title: "Bookmark"
-summary:
-  "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that
-  required interactivity, such as the features section."
+summary: "This project required me to build a fully responsive landing page to the designs provided. The page is created so that everything is progressively enhanced in case CSS or JavaScript fail. The burger-menu will not kick in and all navigation items remain visible, the tabbed interface will not hide any content, and the `details-summary` FAQ section will work, but not animate on open. It won't look great, but everything should still be visible and work."
 displayOrder: 2
 
 # Content
 roles: "Interaction Design / Front End Development"
 stack: "HTML / CSS / JS"
 external: "https://frontendmentor-bookmark-landing.vercel.app/"
-background: "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style."
-previous project: "Manage"
-next project: "Insure"
+background: "This project was a challenge from [Frontend Mentor](https://www.frontendmentor.io). I used Heydon Pickering's [in-depth write up on tabbed interfaces](https://inclusive-components.design/tabbed-interfaces/) as a basis for the tabbed component, which was especially useful for dealing with the tab order. The burger-menu is based on Andy Bell's totally full on [fully responsive progressively enhanced burger menu ](https://piccalil.li/tutorial/build-a-fully-responsive-progressively-enhanced-burger-menu/) which is excellent and very robust."
 
 # Images
 portfolio:

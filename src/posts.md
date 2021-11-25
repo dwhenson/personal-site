@@ -1,5 +1,5 @@
 ---
-title: "Notes on Learnign to Code and Other Things"
+title: "Notes on Learning to Code and Other Things"
 layout: "layouts/posts.html"
 pagination:
   data: collections.posts
@@ -10,5 +10,4 @@ paginationNextText: "Older posts"
 paginationAnchor: "#post-list"
 ---
 
-The latest articles from around the studio, demonstrating our design
-thinking, strategy and expertise.
+Here's my most recent posts.
