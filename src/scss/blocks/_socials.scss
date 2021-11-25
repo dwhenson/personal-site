@@ -1,5 +1,5 @@
 .socials {
-  --bespoke-gap: calc(var(--spacer) * 1);
+  --bespoke-gap: calc(var(--spacer) * 1.5);
 
   flex-direction: row;
   align-items: center;
@@ -7,6 +7,7 @@
 
   a {
     display: block;
+    transform: scale(1.2);
   }
 
   path {

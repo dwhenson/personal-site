@@ -1,43 +1,20 @@
-{% extends "layouts/base.html" %} {% set pageCriticalStyles = ['css/home.css'] %} {% block
-content %}
+{% extends "layouts/base.html" %}
+{% set pageCriticalStyles = ['css/home.css'] %}
+{% block content %}
 <section class="hero">
-  <picture class="hero-image">
-    {% include "partials/hero.svg" %}
- <!--    <source
-      srcset="./../images/homepage/desktop/image-homepage-hero@2x.jpg"
-      media="(min-width: 65em)" />
-    <source
-      srcset="./../images/homepage/tablet/image-homepage-hero@2x.jpg"
-      media="(min-width: 40em)" />
-    <img
-      src="./../images/homepage/mobile/image-homepage-hero@2x.jpg"
-      width="622"
-      height="542"
-      alt="A computer screen showing my work" /> -->
-  </picture>
+  <div class="hero-image">
+    <img src="../../images/hero.svg" alt="">
+  </div>
 
   <div class="[ hero-text ] [ flow-content ]">
-    <h1>Hey, <a href="#about" class="name">I’m Dave</a>. I love building fast, easy<span>-</span>to<span>-</span>use and accessible websites<span>.</span> </h1>
+    <h1>Hey, <a href="#about" class="name">I’m Dave</a>. ÍI love building fast, easy<span>-</span>to<span>-</span>use and accessible websites<span>.</span> </h1>
     <a class="button home" href="#about">About Me</a>
   </div>
 </section>
 
 <section class="[ about ] [ split ]">
   <div class="about-image">
-    {% include "partials/about.svg" %}
-<!--     <picture>
-      <source
-        srcset="./../images/homepage/desktop/image-homepage-profile@2x.jpg"
-        media="(min-width: 65em)" />
-      <source
-        srcset="./../images/homepage/tablet/image-homepage-profile@2x.jpg"
-        media="(min-width: 40em)" />
-      <img
-        src="./../images/homepage/mobile/image-homepage-profile@2x.jpg"
-        width="622"
-        height="692"
-        alt="A profile photo of Alex Spencer looking serious" />
-    </picture> -->
+    <img src="../../images/about.svg" alt="">
   </div>
 
   <div id="about" class="[ about-text ] [ flow-content borders ]">
