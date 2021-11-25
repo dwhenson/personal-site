@@ -1,4 +1,4 @@
 ---
 title: "Projects"
-layout: "layouts/portfolio.html"
+layout: "layouts/projects.html"
 ---

@@ -14,21 +14,17 @@
       padding-block-start: clamp(1rem, 5%, 2rem);
       padding-inline-end: clamp(1rem, 5%, 2rem);
       background-color: var(--clr-neutral-100);
+    }
+  }
 
-      .name {
-        transition: color 150ms;
-        text-decoration: underline;
-        text-transform: initial;
-        color: var(--clr-tertiary-500);
+  .name {
+    transition: color 150ms;
+    text-decoration: underline;
+    text-transform: initial;
+    color: var(--clr-tertiary-500);
 
-        &:hover {
-          color: var(--clr-secondary-500);
-        }
-      }
-
-      span {
-        color: var(--clr-tertiary-500);
-      }
+    &:hover {
+      color: var(--clr-secondary-500);
     }
   }
 

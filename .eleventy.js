@@ -1,5 +1,5 @@
 module.exports = (config) => {
-  const sortByDisplayOrder = require("./src/utils/sort-by-display-order.js");
+  // const sortByDisplayOrder = require("./src/utils/sort-by-display-order.js");
 
   // Transforms
   const htmlMinTransform = require("./src/transforms/html-min-transform.js");
@@ -9,7 +9,11 @@ module.exports = (config) => {
 
   // Returns work items, sorted by display order
   config.addCollection("projects", (collection) => {
-    return sortByDisplayOrder(collection.getFilteredByGlob("./src/projects/*.md"));
+    return collection
+      .getFilteredByGlob("./src/projects/*.md")
+      .sort((a, b) =>
+        Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1
+      );
   });
 
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
