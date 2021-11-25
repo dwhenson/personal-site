@@ -10,7 +10,6 @@
     "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy"
   },
   "license": "ISC",
-  "optionalDependencies": {},
   "devDependencies": {
     "@11ty/eleventy": "0.11.0",
     "browserslist": "^4.16.7",
@@ -46,5 +45,8 @@
     "safari 14",
     "chrome 95",
     "firefox 92"
-  ]
+  ],
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
 }

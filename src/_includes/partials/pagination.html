@@ -1,6 +1,9 @@
+{# Only renders this section if there are items to render #}
+{% if pagination.href.next or pagination.href.previous %}
 <section class="[ pagination-buttons ] [ borders ]">
+  {% if pagination.href.previous %}
   <a
-    href="{{ pagination.href.previous if pagination.href.previous else pagination.href.last }}"
+    href="{{ pagination.href.previous }}{{ paginationAnchor }}"
     class="paginate">
     <svg
       class="arrow previous"
@@ -10,13 +13,14 @@
       <path fill="none" stroke="hsl(214.55, 94.118%, 46.667%)" d="M9 0L1 8l8 8" />
     </svg>
     <p class="h2">
-      {{ pagination.page.previous.data.title if pagination.page.previous.data.title else pagination.page.last.data.title }}
+      {{ pagination.page.previous.data.title if pagination.page.previous.data.title else "Previous" }}
     </p>
     <p class="text previous">{{ paginationPrevText }}</p>
   </a>
-
+  {% endif %}
+  {% if pagination.href.next %}
   <a
-    href="{{ pagination.href.next if pagination.href.next else pagination.href.first }}"
+    href="{{ pagination.href.next }}{{ paginationAnchor }}"
     class="paginate">
     <svg
       class="arrow next"
@@ -27,8 +31,10 @@
     </svg>
     <p class="h2">
       {{ pagination.page.next.data.title if pagination.page.next.data.title else
-      pagination.page.first.data.title }}
+      "Next" }}
     </p>
     <p class="text next">{{ paginationNextText }}</p>
   </a>
+  {% endif %}
 </section>
+{% endif %}
