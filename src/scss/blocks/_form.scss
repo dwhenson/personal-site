@@ -6,6 +6,7 @@
   textarea {
     display: block;
     inline-size: 100%;
+    color: var(--clr-neutral-900);
   }
 
   label {
@@ -46,7 +47,7 @@
   }
 
   .error {
-    outline: 3px solid var(--clr-tertiary-600);
+    border: 3px solid var(--clr-tertiary-600);
   }
 
   .error-message {

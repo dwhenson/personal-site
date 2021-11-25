@@ -1,5 +1,10 @@
+{% set ctaPrefix = cta %}
+
+{% if ctaContent %}
+  {% set ctaPrefix = ctaContent %}
+{% endif %}
+
 <section class="split cta">
-  <h2 class="h1">Interested in doing something <span class="accent">together</span>?</h2>
-  <!-- <hr aria-hidden="true"> -->
-  <a class="button accent" href="/contact/">Contact Me</a>
+  <h2 class="h1">{{ ctaPrefix.text | safe }}</h2>
+  <a class="button accent" href="{{ ctaPrefix.buttonUrl }}">{{ ctaPrefix.buttonText }}</a>
 </section>

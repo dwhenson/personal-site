@@ -2,7 +2,8 @@
 content %}
 <section class="hero">
   <picture class="hero-image">
-    <source
+    {% include "partials/hero.svg" %}
+ <!--    <source
       srcset="./../images/homepage/desktop/image-homepage-hero@2x.jpg"
       media="(min-width: 65em)" />
     <source
@@ -12,18 +13,19 @@ content %}
       src="./../images/homepage/mobile/image-homepage-hero@2x.jpg"
       width="622"
       height="542"
-      alt="A computer screen showing my work" />
+      alt="A computer screen showing my work" /> -->
   </picture>
 
   <div class="[ hero-text ] [ flow-content ]">
-    <h1>Hey, <a href="#about" class="name">I’m Dave</a>. I love building fast, easy<span>-</span>to<span>-</span>use websites everyone can enjoy<span>.</span> </h1>
+    <h1>Hey, <a href="#about" class="name">I’m Dave</a>. I love building fast, easy<span>-</span>to<span>-</span>use and accessible websites<span>.</span> </h1>
     <a class="button home" href="#about">About Me</a>
   </div>
 </section>
 
 <section class="[ about ] [ split ]">
   <div class="about-image">
-    <picture>
+    {% include "partials/about.svg" %}
+<!--     <picture>
       <source
         srcset="./../images/homepage/desktop/image-homepage-profile@2x.jpg"
         media="(min-width: 65em)" />
@@ -35,16 +37,16 @@ content %}
         width="622"
         height="692"
         alt="A profile photo of Alex Spencer looking serious" />
-    </picture>
+    </picture> -->
   </div>
 
   <div id="about" class="[ about-text ] [ flow-content borders ]">
     <h2 class="h1">About Me</h2>
-    <p>I’m a self-taught developer happiest working at the front of the frontend.  For the moment, I'm focused on building my skills writing accessible HTML, modern CSS and vanilla JavaScript, and getting to grips with static site generators (eleventy for the moment). I am also learning about website performance and dipping my toes into UX and UI design.</p>
+    <p>I’m a self-taught developer happiest working at the front of the frontend.  For the moment, I'm focused on building my skills writing accessible HTML, modern CSS and vanilla JavaScript, and getting to grips with static site generators (this site is built using eleventy). I am also learning about website performance and dipping my toes into UX and UI design.</p>
 
      <p>I’m based in Nairobi, Kenya, but I have plenty of experience working with remote teams from my current career. I aim to transition into a frontend developer role over the next year or so. I'd love to find a position where I grow and learn how to apply my skills in a professional setting. Please <a href="contact.html">get in touch</a> if you know of any opportunities.
     </p>
-    <a href="/portfolio/" class="button accent">View Portfolio</a>
+    <a href="/portfolio/" class="button accent">View Projects</a>
   </div>
 </section>
 {% endblock %}
