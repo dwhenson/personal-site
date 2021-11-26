@@ -1,31 +1,22 @@
 .about {
-  --bespoke-gap: 2em;
+  display: grid;
+  gap: var(--spacer);
 
-  @include respond-to("medium") {
-    --bespoke-gap: clamp(3rem, 20%, 8rem);
-
-    align-items: unset;
-    justify-content: unset;
+  @include respond-to("large") {
+    grid-template-columns: 1fr 1fr;
+    gap: max(4vh, 1rem);
   }
-}
 
-.about-text {
-  scroll-margin-top: 3rem;
-}
+  img {
+    box-shadow: none;
+  }
 
-.about-text,
-.about-image {
-  flex-basis: 50%;
-}
-
-@include respond-to("medium") {
   .about-image {
-    align-self: center;
+    display: grid;
+    align-content: center;
   }
 
   .about-text {
-    display: grid;
-    align-content: center;
-    max-inline-size: 45ch;
+    scroll-margin-top: 3rem;
   }
 }
