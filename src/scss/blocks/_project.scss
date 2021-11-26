@@ -15,7 +15,7 @@
 
 .project-intro {
   display: grid;
-  gap: var(--spacer) clamp(2.5rem, 15%, 5rem);
+  // gap: var(--spacer) clamp(2.5rem, 15%, 5rem);
 
   @include respond-to("medium") {
     grid-template-columns: 1fr 1fr;
@@ -40,6 +40,10 @@
     .summary {
       grid-area: auto;
     }
+  }
+
+  .roles {
+    margin-block-start: 0;
   }
 
   .roles {

@@ -16,15 +16,16 @@
         height="280"
         alt="{{ title }} landing page" />
     </picture>
-    <header class="[ project-intro ] [ borders ]">
+    <header class="[ project-intro ] [ flow-content ]">
       <h2 class="h1">{{ title }}</h2>
       <p class="roles">{{ stack }}</p>
       <p class="summary">{{ summary }}</p>
       <a href="{{ external }}" class="button">Visit Website</a>
+      <a href="{{ external }}" class="button accent">View Code</a>
     </header>
     <section class="flow-content">
       <h3 class="h2">Background and Interesting Bits</h3>
-      <p>{{ background }}</p>
+      <p>{{ background | safe }}</p>
       <h3 class="h2">Static Previews</h3>
       <picture>
         <source

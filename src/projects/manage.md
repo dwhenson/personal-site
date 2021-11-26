@@ -1,21 +1,13 @@
 ---
 title: "Manage"
-summary: "This project required me to build a fully responsive landing page to the designs
-  provided. I used HTML5, along with CSS Grid and JavaScript for the areas that
-  required interactivity, such as the testimonial slider."
+summary: "This project required me to build a fully responsive landing page to the designs provided. From the design specs it seemed the carousel was only needed on small screens. I made this happen, but only on page load. As a result, the page responds fine moving from large to small screens, as the content is visible, but not the other way around. I didn't enjoy coding this aspect of the challenge."
 displayOrder: 1
 
 #Content
 roles: "Interaction Design / Front End Development"
 stack: "HTML / CSS / JS"
 external: "https://frontendmentor-manage.vercel.app/"
-background:
-  "This project was a front-end  challenge from Frontend Mentor. It’s a platform that
-  enables you to practice building websites to a design and project brief. Each challenge
-  includes mobile and desktop designs to show how the website should look at different
-  screen sizes. Creating these projects has helped me refine my workflow and solve
-  real-world coding problems. I’ve learned something new with each project, helping
-  me to improve and adapt my style."
+background: "This project was a challenge from [Frontend Mentor](https://www.frontendmentor.io). The carousel is problematic. It's not accessible, and the buttons for changing the image shown are too small. This is in line with the design. I used [Siema](https://github.com/pawelgrzybek/siema) for the carousel. But even the creator notes 'I consider carousels as an anti-pattern and I would suggest you to find a better UI pattern than carousel for your current project.' I would agree. "
 
 # Images
 portfolio:
