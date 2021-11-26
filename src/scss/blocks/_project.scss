@@ -14,17 +14,12 @@
 }
 
 .project-intro {
-  display: grid;
-  // gap: var(--spacer) clamp(2.5rem, 15%, 5rem);
+  align-self: start;
 
   @include respond-to("medium") {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    align-self: start;
-
-    .button,
-    .roles {
-      grid-column: 1;
-    }
+    gap: var(--spacer);
 
     .summary {
       grid-area: 1 / 2 / 4 / -1;
@@ -34,19 +29,28 @@
   }
 
   @include respond-to("large") {
-    grid-template-columns: 1fr;
-    grid-auto-rows: min-content;
-
-    .summary {
-      grid-area: auto;
-    }
+    display: initial;
   }
 
   .roles {
-    margin-block-start: 0;
-  }
-
-  .roles {
+    margin-block-start: 0.5rem;
     color: var(--clr-tertiary-500);
   }
+
+  // FIXME summary border at large BP
+  //   @include respond-to("large") {
+  //     display: revert;
+
+  //     // .summary {
+  //     //   grid-area: auto;
+  //     // }
+  //   }
+
+  //   .button,
+  //   .roles {
+  //     grid-column: 1;
+  //   }
+
+  //
+  // }
 }
