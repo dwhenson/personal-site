@@ -1,40 +1,34 @@
-{# Only renders this section if there are items to render #}
-{% if pagination.href.next or pagination.href.previous %}
 <section class="[ pagination-buttons ] [ borders ]">
-  {% if pagination.href.previous %}
   <a
-    href="{{ pagination.href.previous }}{{ paginationAnchor }}"
+    href="{{ pagination.href.previous if pagination.href.previous else pagination.href.last }}"
     class="paginate">
     <svg
       class="arrow previous"
       xmlns="http://www.w3.org/2000/svg"
       width="10"
       height="16">
-      <path fill="none" stroke="hsl(214.55, 94.118%, 46.667%)" d="M9 0L1 8l8 8" />
+      <path fill="none" stroke="#33323D" d="M9 0L1 8l8 8" />
     </svg>
     <p class="h2">
-      {{ pagination.page.previous.data.title if pagination.page.previous.data.title else "Previous" }}
+      {{ pagination.page.previous.data.title if pagination.page.previous.data.title else pagination.page.last.data.title }}
     </p>
     <p class="text previous">{{ paginationPrevText }}</p>
   </a>
-  {% endif %}
-  {% if pagination.href.next %}
+
   <a
-    href="{{ pagination.href.next }}{{ paginationAnchor }}"
+    href="{{ pagination.href.next if pagination.href.next else pagination.href.first }}"
     class="paginate">
     <svg
       class="arrow next"
       xmlns="http://www.w3.org/2000/svg"
       width="10"
       height="16">
-      <path fill="none" stroke="hsl(214.55, 94.118%, 46.667%)" d="M1 0l8 8-8 8" />
+      <path fill="none" stroke="#33323D" d="M1 0l8 8-8 8" />
     </svg>
     <p class="h2">
       {{ pagination.page.next.data.title if pagination.page.next.data.title else
-      "Next" }}
+      pagination.page.first.data.title }}
     </p>
     <p class="text next">{{ paginationNextText }}</p>
   </a>
-  {% endif %}
 </section>
-{% endif %}

@@ -6,5 +6,5 @@ pagination:
   size: 1
   alias: tag
   filter: ["all", "rss"]
-permalink: "/tag/{{ tag | slug }}/"
+permalink: "/posts/tag/{{ tag | slug }}/"
 ---

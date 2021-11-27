@@ -2,60 +2,9 @@
 {% set pageCriticalStyles = ['css/project.css'] %}
 
 {% block content %}
-  <article class="project">
-    <picture class="project-hero">
-      <source
-        srcset="{{ project.hero.desktop }}"
-        media="(min-width: 65em)" />
-      <source
-        srcset="{{ project.hero.tablet }}"
-        media="(min-width: 40em)" />
-      <img
-        src="{{ project.hero.mobile }}"
-        width="622"
-        height="280"
-        alt="{{ title }} landing page" />
-    </picture>
-    <header class="[ project-intro ] [ flow-content ]">
-      <div class="flow-content">
-        <h2 class="h1">{{ title }}</h2>
-        <p class="roles">{{ stack }}</p>
-      </div>
-      <p class="summary">{{ summary }}</p>
-      <a href="{{ external }}" class="button">Visit Website</a>
-    </header>
-    <section class="flow-content">
-      <h3 class="h2">Background and Interesting Bits</h3>
-      <p>{{ background | safe }}</p>
-      <h3 class="h2">Static Previews</h3>
-      <picture>
-        <source
-          srcset="{{ project.previews.desktop.one }}"
-          media="(min-width: 65em)" />
-        <source
-          srcset="{{ project.previews.tablet.one }}"
-          media="(min-width: 40em)" />
-        <img
-          src="{{ project.previews.mobile.one }}"
-          width="622"
-          height="392"
-          alt="{{ title }} landing page" />
-      </picture>
-      <picture>
-        <source
-          srcset="{{ project.previews.desktop.two }}"
-          media="(min-width: 65em)" />
-        <source
-          srcset="{{ project.previews.tablet.two }}"
-          media="(min-width: 40em)" />
-        <img
-          src="{{ project.previews.mobile.two }}"
-          width="622"
-          height="392"
-          alt="{{ title }} landing page" />
-      </picture>
-    </section>
-  </article>
-  {% include "partials/pagination.html" %}
+{%- for item in pagination.items %}
+{% include "partials/project-item.html" %}
+{% include "partials/pagination.html" %}
+{% endfor -%}
 
 {% endblock %}
