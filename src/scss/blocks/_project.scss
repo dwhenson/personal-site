@@ -17,6 +17,8 @@
   align-self: start;
 
   @include respond-to("medium") {
+    --bespoke-flow-spacer: 0;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacer);
@@ -24,11 +26,11 @@
     .summary {
       grid-area: 1 / 2 / 4 / -1;
       align-self: start;
-      margin-block-start: 0;
     }
   }
 
   @include respond-to("large") {
+    --bespoke-flow-spacer: calc(var(--spacer) * 2);
     display: initial;
   }
 
@@ -36,21 +38,4 @@
     margin-block-start: 0.5rem;
     color: var(--clr-tertiary-500);
   }
-
-  // FIXME summary border at large BP
-  //   @include respond-to("large") {
-  //     display: revert;
-
-  //     // .summary {
-  //     //   grid-area: auto;
-  //     // }
-  //   }
-
-  //   .button,
-  //   .roles {
-  //     grid-column: 1;
-  //   }
-
-  //
-  // }
 }

@@ -22,15 +22,15 @@
     h2 {
       flex: 1 1 14ch;
       color: var(--clr-primary-500);
-
-      span {
-        color: var(--clr-tertiary-500);
-      }
     }
 
     a {
       flex: 0 0 max-content;
       order: 1;
     }
+  }
+
+  span {
+    color: var(--clr-tertiary-500);
   }
 }

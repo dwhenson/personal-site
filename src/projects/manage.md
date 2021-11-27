@@ -7,7 +7,7 @@ displayOrder: 1
 roles: "Interaction Design / Front End Development"
 stack: "HTML / CSS / JS"
 external: "https://frontendmentor-manage.vercel.app/"
-background: "This project was a challenge from [Frontend Mentor](https://www.frontendmentor.io). The carousel is problematic. It's not accessible, and the buttons for changing the image shown are too small. This is in line with the design. I used [Siema](https://github.com/pawelgrzybek/siema) for the carousel. But even the creator notes 'I consider carousels as an anti-pattern and I would suggest you to find a better UI pattern than carousel for your current project.' I would agree. "
+background: "This project was a challenge from <a href='https://www.frontendmentor.io'>Frontend Mentor</a>. The carousel is problematic. It's not accessible, and the buttons for changing the image shown are too small. This is in line with the design. I used <a href='https://github.com/pawelgrzybek/siema'>Siema</a> for the carousel. But even the creator notes 'I consider carousels as an anti-pattern and I would suggest you to find a better UI pattern than carousel for your current project.' I would agree. "
 
 # Images
 portfolio:
