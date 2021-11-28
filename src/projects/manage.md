@@ -1,13 +1,11 @@
 ---
 title: "Manage"
-summary: "This project required me to build a fully responsive landing page to the designs provided. From the design specs it seemed the carousel was only needed on small screens. I made this happen, but only on page load. As a result, the page responds fine moving from large to small screens, as the content is visible, but not the other way around. I didn't enjoy coding this aspect of the challenge."
-displayOrder: 1
+summary: "This project was a challenge from <a href='https://www.frontendmentor.io'>Frontend Mentor</a>. The specifications required me to build a fully responsive landing page to the designs provided. I used semantic HTML, CSS for layout (CUBE CSS),  with JavaScript for form validation and <a href='https://github.com/pawelgrzybek/siema'>Siema</a> for the carousel."
+displayOrder: 2
 
 #Content
-roles: "Interaction Design / Front End Development"
 stack: "HTML / CSS / JS"
-external: "https://frontendmentor-manage.vercel.app/"
-background: "This project was a challenge from <a href='https://www.frontendmentor.io'>Frontend Mentor</a>. The carousel is problematic. It's not accessible, and the buttons for changing the image shown are too small. This is in line with the design. I used <a href='https://github.com/pawelgrzybek/siema'>Siema</a> for the carousel. But even the creator notes 'I consider carousels as an anti-pattern and I would suggest you to find a better UI pattern than carousel for your current project.' I would agree. "
+link: "https://frontendmentor-manage.vercel.app/"
 
 # Images
 portfolio:
@@ -32,4 +30,6 @@ project:
       two: "../../images/project/desktop/image-manage-preview-2@2x.jpg"
 ---
 
-This project was a challenge from <a href='https://www.frontendmentor.io'>Frontend Mentor</a>. The carousel is problematic. It's not accessible, and the buttons for changing the image shown are too small. This is in line with the design. I used <a href='https://github.com/pawelgrzybek/siema'>Siema</a> for the carousel. But even the creator notes 'I consider carousels as an anti-pattern and I would suggest you to find a better UI pattern than carousel for your current project.' I would agree.
+I need to say it up front: The carousel shown on small screens is problematic. It's not accessible, and the buttons for changing the image shown are too small. This is in line with the design provided. But I don't like it. I used <a href='https://github.com/pawelgrzybek/siema'>Siema</a> for the carousel, but even the package creator notes 'I consider carousels as an anti-pattern and I would suggest you to find a better UI pattern than carousel for your current project.' I would agree.
+
+I also misunderstood the design specifications, as I thought the carousel was only needed at small screen sizes. This was more complicated than I had hoped as I needed to set this up in a JS file before the carousel component was created. I achieved this using `if (width.matches) { ...add siema class }`. This worked, but this means that content is hidden if the viewport is expanded from the small to medium media query, which is not ideal.

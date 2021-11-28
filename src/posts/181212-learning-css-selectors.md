@@ -2,7 +2,8 @@
  title: Cracking Selectors and Styling in CSS
  sub-title: How I learned the (very) basics of CSS, in a few more months
  date: 2018-12-12
- tags: ["Learning"]
+ tags:
+  - "Learning"
 ---
 
 Using the same approach I outlined for learning HTML you can get the hang of basic CSS in a few months.

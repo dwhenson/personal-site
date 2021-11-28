@@ -2,7 +2,8 @@
 title: Cheap and comfy-coding
 sub-title: Getting set up for coding on the cheap
 date: 2018-10-17
-tags: ["Learning"]
+tags:
+  - "Learning"
 ---
 
 There’s some excellent free or cheap resources out there to help you get started coding without much cost.

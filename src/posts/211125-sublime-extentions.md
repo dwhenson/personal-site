@@ -1,7 +1,8 @@
 ---
  title: Making Sublime Text Nicer with Packages
  date: 2021-05-30
- tags: ["Sublime"]
+ tags:
+   - "Sublime"
 ---
 
 I like to keep my packages to a minimum. I have not experienced any of the packages I have installed in Sublime Text slowing down the editor but it’s worth keeping any eye on this as it is an issue with other editors. There are many articles out there on the ‘best’ or ‘essential’ packages you should install. Here’s my list and settings, which have served me well for basic frontend development in HTML, CSS (SCSS) and JavaScript.

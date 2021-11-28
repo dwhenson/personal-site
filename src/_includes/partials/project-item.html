@@ -15,12 +15,13 @@
   </picture>
   <header class="[ project-intro ] [ borders ]">
     <h2 class="h1">{{ item.data.title }}</h2>
-    <p class="roles">{{ item.data.roles }}</p>
-    <p class="summary">{{ item.data.summary }}</p>
-    <a href="{{ item.data.external }}" class="button">Visit Website</a>
+    <p class="roles">{{ item.data.stack }}</p>
+    <p class="summary">{{ item.data.summary | safe }}</p>
+    <a href="{{ item.data.link }}" class="button">Visit Website</a>
+    <a href="{{ item.data.link }}" class="button accent">GitHub Repo</a>
   </header>
   <section class="flow-content">
-    <h3 class="h2">Project Background</h3>
+    <h3 class="h2">Notes and Tricky Bits</h3>
     <p>{{ item.templateContent | safe }}</p>
     <h3 class="h2">Static Previews</h3>
     <picture>

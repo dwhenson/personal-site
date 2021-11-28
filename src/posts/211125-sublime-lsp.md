@@ -1,7 +1,8 @@
 ---
  title: Making Sublime like an IDE - but the Good Parts
  date: 2021-05-25
- tags: ["Sublime"]
+ tags:
+   - "Sublime"
 ---
 
 Autocomplete is essential for me. What I don’t want though is a long garbled mess of suggestions, snippets and file names anytime I type something. The settings below achieve this. I hear that autocomplete has been really improved in Sublime Text 4, but from my little trial I still find it a bit much and I like the more focused results from Language Server Protocol(link)

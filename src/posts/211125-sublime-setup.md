@@ -1,7 +1,8 @@
 ---
  title: Making Sublime Text more lovely
  date: 2021-05-17
- tags: ["Sublime"]
+ tags:
+   - "Sublime"
 ---
 
 I really like Sublime Text [link]. It’s fast, functional and looks pretty good straight out of the box. With some adjustments it can look amazing, and fit in around any workflow you have. To start with though it can be a bit tricky to get used to adjusting settings and getting comfortable with how to customise things.
