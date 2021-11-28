@@ -31,3 +31,5 @@ project:
       one: "../../images/project/desktop/image-manage-preview-1@2x.jpg"
       two: "../../images/project/desktop/image-manage-preview-2@2x.jpg"
 ---
+
+This project was a challenge from <a href='https://www.frontendmentor.io'>Frontend Mentor</a>. The carousel is problematic. It's not accessible, and the buttons for changing the image shown are too small. This is in line with the design. I used <a href='https://github.com/pawelgrzybek/siema'>Siema</a> for the carousel. But even the creator notes 'I consider carousels as an anti-pattern and I would suggest you to find a better UI pattern than carousel for your current project.' I would agree.

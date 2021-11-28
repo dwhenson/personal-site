@@ -31,3 +31,5 @@ project:
       one: "../../images/project/desktop/image-bookmark-preview-1@2x.jpg"
       two: "../../images/project/desktop/image-bookmark-preview-2@2x.jpg"
 ---
+
+This project was a challenge from [Frontend Mentor](https://www.frontendmentor.io). I used Heydon Pickering's [in-depth write up on tabbed interfaces](https://inclusive-components.design/tabbed-interfaces/) as a basis for the tabbed component, which was especially useful for dealing with the tab order. The burger-menu is based on Andy Bell's totally full on [fully responsive progressively enhanced burger menu ](https://piccalil.li/tutorial/build-a-fully-responsive-progressively-enhanced-burger-menu/) which is excellent and very robust.

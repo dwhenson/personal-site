@@ -2,13 +2,9 @@
   <a
     href="{{ pagination.href.previous if pagination.href.previous else pagination.href.last }}"
     class="paginate">
-    <svg
-      class="arrow previous"
-      xmlns="http://www.w3.org/2000/svg"
-      width="10"
-      height="16">
-      <path fill="none" stroke="#33323D" d="M9 0L1 8l8 8" />
-    </svg>
+    {% if postListItems %}
+          <p>Only renders on the post page as postlistItems was set there</p>
+    {% endif %}
     <p class="h2">
       {{ pagination.page.previous.data.title if pagination.page.previous.data.title else pagination.page.last.data.title }}
     </p>
@@ -18,13 +14,6 @@
   <a
     href="{{ pagination.href.next if pagination.href.next else pagination.href.first }}"
     class="paginate">
-    <svg
-      class="arrow next"
-      xmlns="http://www.w3.org/2000/svg"
-      width="10"
-      height="16">
-      <path fill="none" stroke="#33323D" d="M1 0l8 8-8 8" />
-    </svg>
     <p class="h2">
       {{ pagination.page.next.data.title if pagination.page.next.data.title else
       pagination.page.first.data.title }}

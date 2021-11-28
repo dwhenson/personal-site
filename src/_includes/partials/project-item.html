@@ -21,7 +21,7 @@
   </header>
   <section class="flow-content">
     <h3 class="h2">Project Background</h3>
-    <p>{{ item.data.background }}</p>
+    <p>{{ item.templateContent | safe }}</p>
     <h3 class="h2">Static Previews</h3>
     <picture>
       <source
