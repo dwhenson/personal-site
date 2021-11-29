@@ -12,6 +12,7 @@ const criticalStyles = new Set([
   "projects.scss",
   "project.scss",
   "contact.scss",
+  "posts.scss",
 ]);
 
 // Takes the arguments passed by `dest` and determines where the output file goes

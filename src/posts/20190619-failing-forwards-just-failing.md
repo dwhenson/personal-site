@@ -2,7 +2,7 @@
 title: Failing forwards, or just failing?
 sub-title: Things get a little bit real, and I'm not sure I like it.
 lead: It's easy to avoid it, but sooner or later you're going to have to build something; make it sooner.
-date: 2019-04-04
+date: 2019-07-04
 tags:
   - "Learning"
 ---

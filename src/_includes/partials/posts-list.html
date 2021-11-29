@@ -1,18 +1,19 @@
-<div class="[ dot-shadow panel ] [ bg-secondary-glare ]" id="post-list">
-  <div class="[ wrapper ] [ flow flow-space-700 ]">
+  <!-- FIXME HTML errors change to spans -->
     {% if postListHeadline %}
-    <h2 class="[ headline ] [ measure-micro ]" data-highlight="primary">
+    <h2 class="">
       {{ postListHeadline }}
     </h2>
     {% endif %}
     <div>
-      <ol class="[ post-list ] [ flow ]">
+      <ol class="[ post-list ] [ flow-content ]" role="list">
         {% for item in postListItems %}
-        <li class="[ post-list__item ] [ leading-tight measure-long ]">
-          <a href="{{ item.url }}" class="post-list__link">{{ item.data.title }}</a>
+        <li class="[ post ][ flow-content ]">
+          <a href="{{ item.url }}" class="[ post-list-item ][ flow-content ]">
+            <time datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time>
+            <h2>{{ item.data.title }}</h2>
+            <p>{{ item.data.lead }}</p>
+          </a>
         </li>
         {% endfor %}
       </ol>
     </div>
-  </div>
-</div>

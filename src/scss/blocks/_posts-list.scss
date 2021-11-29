@@ -1,0 +1,22 @@
+.posts {
+  --bespoke-flow-spacer: 1em;
+
+  .post-list {
+    --bespoke-flow-spacer: 3em;
+  }
+
+  .post-list-item {
+    --bespoke-flow-spacer: 0.5em;
+
+    text-decoration: none;
+
+    time {
+      font-size: var(--step--1);
+      color: var(--clr-neutral-900);
+    }
+
+    p {
+      color: var(--clr-neutral-900);
+    }
+  }
+}
