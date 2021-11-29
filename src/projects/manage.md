@@ -30,6 +30,18 @@ project:
       two: "../../images/project/desktop/image-manage-preview-2@2x.jpg"
 ---
 
-I need to say it up front: The carousel shown on small screens is problematic. It's not accessible, and the buttons for changing the image shown are too small. This is in line with the design provided. But I don't like it. I used <a href='https://github.com/pawelgrzybek/siema'>Siema</a> for the carousel, but even the package creator notes 'I consider carousels as an anti-pattern and I would suggest you to find a better UI pattern than carousel for your current project.' I would agree.
+I need to say it up front: The carousel shown on small screens is problematic. It's not accessible, and the buttons for changing the image shown are too small (only shown on small viewports). This is in line with the design provided. But I don't like it.
 
-I also misunderstood the design specifications, as I thought the carousel was only needed at small screen sizes. This was more complicated than I had hoped as I needed to set this up in a JS file before the carousel component was created. I achieved this using `if (width.matches) { ...add siema class }`. This worked, but this means that content is hidden if the viewport is expanded from the small to medium media query, which is not ideal.
+I used <a href='https://github.com/pawelgrzybek/siema'>Siema</a> for the carousel, but even the package creator notes <q>I consider carousels as an anti-pattern and I would suggest you to find a better UI pattern than carousel for your current project.</q> I would agree.
+
+I also misunderstood the design specifications, as I thought the carousel was only needed at small screen sizes (a lesson in itself there). This was more complicated than I had hoped as I needed to set this up in a JS file before the carousel component was created.
+
+I achieved this using the following in my JS:
+
+```js
+if (width.matches) {
+  siemaContainer.classList.add("siema");
+}
+```
+
+This worked, but this means that content is hidden if the viewport is expanded from the small to medium media query, which is not ideal (although it works the other way round - of a fashion).

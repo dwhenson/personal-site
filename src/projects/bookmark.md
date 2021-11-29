@@ -1,6 +1,6 @@
 ---
 title: "Bookmark"
-summary: "This project was a challenge from <a href='https://www.frontendmentor.io'>Frontend Mentor</a>. The specifications required me to build a fully responsive landing page to the designs provided. I used semantic HTML, CSS for layout (CUBE CSS),  with JavaScript for form validation and for the tabbed component."
+summary: "This project was a challenge from <a href='https://www.frontendmentor.io'>Frontend Mentor</a>. The specifications required me to build a fully responsive landing page to the designs provided. I used semantic HTML, CSS for layout (CUBE CSS),  with JavaScript for form validation and the tabbed component."
 displayOrder: 1
 
 # Content
@@ -30,8 +30,8 @@ project:
       two: "../../images/project/desktop/image-bookmark-preview-2@2x.jpg"
 ---
 
-There were a couple of tricky aspects to this challenge. Notably the tabbed component and managing tab order to allow keyboard users to tab into the focused component, rather than onto the next tab. I used Heydon Pickering's [in-depth write up on tabbed interfaces](https://inclusive-components.design/tabbed-interfaces/) as a basis for the tabbed component, which was especially useful for dealing with the tab order.
+There were a couple of tricky aspects to this challenge. Notably the tabbed component and managing tab order to allow keyboard users to tab into the focused component, rather than onto the next tab. I used Heydon Pickering's [in-depth write up on tabbed interfaces](https://inclusive-components.design/tabbed-interfaces/) as a basis for the tabbed component. This was especially useful for dealing with the tab order.
 
-The burger-menu shown on smaller screens was as fiddly as ever. The component is based on Andy Bell's totally full on [fully responsive progressively enhanced burger menu ](https://piccalil.li/tutorial/build-a-fully-responsive-progressively-enhanced-burger-menu/) which is excellent and very robust. Again, if JS should fail for any reason no content his hidden. I also allow scroll when the menu is open — I know some people don't like this but I prefer not to restrict the user unless essential.
+The burger-menu shown on smaller screens was fiddly. The component is based on Andy Bell's totally full on [fully responsive progressively enhanced burger menu ](https://piccalil.li/tutorial/build-a-fully-responsive-progressively-enhanced-burger-menu/) which is excellent and very robust. Again, if JS should fail for any reason no content is hidden. I also allow the `body` scroll when the menu is open — some people don't like this, but I prefer not to restrict the user if possible.
 
-Wherever possible the page also takes advantage of in-built HTML functionality. The FAQ section is created using uses the `details-summary` element and the `no-validate` attribute is added to the form using JavaScript enabling a fallback to built in validation. I in-lined the CSS to improve performance, but I am still struggling with some CLS issues.
+The page also takes advantage of in-built HTML functionality. The FAQ section is created using the `details-summary` element (which has some nice built in focus states etc.). The `no-validate` attribute is added to the form using JavaScript, which enables a fallback to built-in, browser validation. I in-lined the CSS to improve performance, but some CLS issues remain that I need to look at again.
