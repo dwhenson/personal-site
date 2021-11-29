@@ -9,7 +9,7 @@ const isProduction = process.env.NODE_ENV === "production";
 const criticalStyles = new Set([
   "critical.scss",
   "home.scss",
-  "portfolio.scss",
+  "projects.scss",
   "project.scss",
   "contact.scss",
 ]);

@@ -13,15 +13,17 @@
       height="280"
       alt="{{ item.data.title }} landing page" />
   </picture>
-  <header class="[ project-intro ] [ borders ]">
-    <h2 class="h1">{{ item.data.title }}</h2>
-    <p class="roles">{{ item.data.stack }}</p>
+  <header class="[ project-intro ] [ flow-content borders ]">
+    <div>
+      <h2 class="h1">{{ item.data.title }}</h2>
+      <p class="roles">{{ item.data.stack }}</p>
+    </div>
     <p class="summary">{{ item.data.summary | safe }}</p>
     <a href="{{ item.data.link }}" class="button">Visit Website</a>
-    <a href="{{ item.data.link }}" class="button accent">GitHub Repo</a>
+    <a href="{{ item.data.link }}" class="button accent">Source Code</a>
   </header>
   <section class="flow-content">
-    <h3 class="h2">Notes and Tricky Bits</h3>
+    <h3 class="h2">Notes and Queries</h3>
     <p>{{ item.templateContent | safe }}</p>
     <h3 class="h2">Static Previews</h3>
     <picture>
