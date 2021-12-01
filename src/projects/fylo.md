@@ -9,14 +9,8 @@ displayOrder: 4
 # Content
 roles: "Interaction Design / Front End Development"
 stack: "HTML / CSS"
-external: "https://frontend-mentor-fylo-dark-six.vercel.app/"
-background:
-  "This project was a front-end  challenge from Frontend Mentor. It’s a platform that
-  enables you to practice building websites to a design and project brief. Each challenge
-  includes mobile and desktop designs to show how the website should look at different
-  screen sizes. Creating these projects has helped me refine my workflow and solve
-  real-world coding problems. I’ve learned something new with each project, helping
-  me to improve and adapt my style."
+link: "https://frontend-mentor-fylo-dark-six.vercel.app/"
+repo: "https://github.com/dwhenson/frontend-mentor/tree/master/28.%20fylo-landing-page"
 
 # Images
 portfolio:
@@ -40,3 +34,5 @@ project:
       one: "../../images/project/desktop/image-fylo-preview-1@2x.jpg"
       two: "../../images/project/desktop/image-fylo-preview-2@2x.jpg"
 ---
+
+This project was a front-end challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.

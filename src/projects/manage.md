@@ -6,6 +6,7 @@ displayOrder: 2
 #Content
 stack: "HTML / CSS / JS"
 link: "https://frontendmentor-manage.vercel.app/"
+repo: "https://github.com/dwhenson/frontendmentor-manage"
 
 # Images
 portfolio:

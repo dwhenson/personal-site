@@ -1,17 +1,16 @@
 {# Only renders this section if there are links to render #}
 {% if pagination.href.next or pagination.href.previous %}
-  <section class="[ pagination-buttons ] [ dot-shadow panel ] [ bg-light-glare font-sans weight-bold ]">
-      <div class="pagination-buttons split" aria-label="Pagination links">
+      <section class="pagination-buttons" aria-label="Pagination links">
         {% if pagination.href.next %}
-          <a href="{{ pagination.href.next }}" class="paginate">
-            <span  class="text next">{{ paginationNextText if paginationNextText else 'Next' }}</span>
+          <a href="{{ pagination.href.next }}" class="paginate previous ">
+            <p  class="h2">&#8592; {{ paginationPrevText if paginationPrevText else 'Previous' }} </p>
           </a>
+
         {% endif %}
         {% if pagination.href.previous %}
-          <a href="{{ pagination.href.previous }}" class="paginate">
-            <span class="text previous">{{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
+          <a href="{{ pagination.href.previous }}" class="paginate next">
+            <p class="h2">{{ paginationNextText if paginationNextText else 'Next' }} &#8594;</p>
           </a>
         {% endif %}
-      </div>
-  </section>
+      </section>
 {% endif %}

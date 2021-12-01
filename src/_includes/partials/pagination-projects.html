@@ -1,23 +1,23 @@
 <section class="[ pagination-buttons ] [ borders ]">
   <a
     href="{{ pagination.href.previous if pagination.href.previous else pagination.href.last }}"
-    class="paginate">
+    class="paginate previous">
     {% if postListItems %}
           <p>Only renders on the post page as postlistItems was set there</p>
     {% endif %}
     <p class="h2">
       {{ pagination.page.previous.data.title if pagination.page.previous.data.title else pagination.page.last.data.title }}
     </p>
-    <p class="text previous">{{ paginationPrevText }}</p>
+    <p class="text">&#8592; {{ paginationPrevText }}</p>
   </a>
 
   <a
     href="{{ pagination.href.next if pagination.href.next else pagination.href.first }}"
-    class="paginate">
+    class="paginate next">
     <p class="h2">
       {{ pagination.page.next.data.title if pagination.page.next.data.title else
       pagination.page.first.data.title }}
     </p>
-    <p class="text next">{{ paginationNextText }}</p>
+    <p class="text">{{ paginationNextText }} &#8594;</p>
   </a>
 </section>

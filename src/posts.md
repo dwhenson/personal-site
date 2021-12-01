@@ -3,10 +3,10 @@ title: "Articles"
 layout: "layouts/posts.html"
 pagination:
   data: collections.posts
-  size: 2
+  size: 3
 permalink: "posts{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html"
-paginationPrevText: "Newer posts"
-paginationNextText: "Older posts"
+paginationPrevText: "Older posts"
+paginationNextText: "Newer posts"
 paginationAnchor: "#post-list"
 ---
 

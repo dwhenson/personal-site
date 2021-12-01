@@ -6,6 +6,7 @@ displayOrder: 1
 # Content
 stack: "HTML / CSS / JS"
 link: "https://frontendmentor-bookmark-landing.vercel.app/"
+repo: "https://github.com/dwhenson/frontendmentor-bookmark-landing"
 
 # Images
 portfolio:
