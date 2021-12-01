@@ -13,7 +13,17 @@
 
 {% block content %}
   <section class="[ posts ][ flow-section ]">
-    {% include "partials/posts-header.html" %}
+    <section class="flow-content">
+      <h1 class="">
+        {{ pageHeaderTitle }}
+      </h1>
+        {% if pageHeaderSummary %}
+      <div class="posts-subheading">
+        {{ pageHeaderSummary | safe  }}
+      </div>
+      {% endif %}
+    </section>
+
     {% include "partials/posts-list.html" %}
 
     {% if not tag %}

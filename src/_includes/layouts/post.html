@@ -1,36 +1,46 @@
 {% extends "layouts/base.html" %}
+{% set pageCriticalStyles = ['css/post.css'] %}
+
 {% set pageHeaderTitle = title %}
 {% set recommendedPosts = helpers.getSiblingContent(collections.posts, page) %}
 
 {% set pageHeaderSummary %}
-  <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
-  {% if tags %}
-    <p class="visually-hidden" id="tags-desc">Tags that this post has been filed under.</p>
-    <ul class="tags-list" aria-describedby="tags-desc">
-      {% for tag in tags %}
-        <li>
-          <a href="/posts/tag/{{ tag | slug }}/">#{{ tag | title | replace(' ', '') }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+
 {% endset %}
 
 {% block content %}
-  <article>
-    {% include "partials/posts-header.html" %}
+  <article class="post flow-content">
+    <section class="post-header">
+      {% if tags %}
+        <p class="visually-hidden" id="tags-desc">Tags that this post has been filed under.</p>
+        <ul class="tags-list" role="list" aria-describedby="tags-desc">
+          {% for tag in tags %}
+            <li>
+              <a href="/posts/tag/{{ tag | slug }}/">#{{ tag | title | replace(' ', '') }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
 
-    <div class="[ page-content ] [ flow wrapper ] [ flow-space-700 gap-top-700 ]">
+        <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
+        <h1 class="">{{ pageHeaderTitle }}</h1>
+        <p class="subtitle">{{ subtitle }}</p>
+  <p class="lead">{{ lead }}</p>
+    </section>
+
+
+    <section class="post-body flow-content">
       {{ content | safe }}
-    </div>
+    </section>
+  </article>
 
   {% if recommendedPosts %}
-    <footer class="recommended-posts">
+    <section class="recommended-posts">
       {% set postListItems = recommendedPosts %}
       {% set postListHeadline = 'Other posts you might like' %}
       {% include "partials/posts-list.html" %}
-    </footer>
+    </section>
   {% endif %}
-  </article>
+
 {% endblock %}
 

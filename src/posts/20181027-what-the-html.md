@@ -1,10 +1,11 @@
 ---
 title: What the HTML?
-sub-title: How I learned (the basics of) HTML - in a few short months
+subtitle: How I learned (the basics of) HTML - in a few short months
 lead: With some dedication, patience, and access to online tutorials and a couple of good reference books, managing, if not mastering, HTML is totally do-able.
 date: 2018-10-27
 tags:
   - "Learning"
+  - "testing"
 ---
 
 _EDIT: I wrote this just after I started learning but updated it with new resources and links just before I launched my personal site three years later._
@@ -21,4 +22,4 @@ I really wanted to get a good understanding of HTML and feel comfortable with it
 
 I also found the [<i>HTML and CSS</i>](https://htmlandcssbook.com) book by Jon Ducket a very useful reference. It's a little dated now with regard some aspects of HTML5, but it's beautiful to look at and a joy to read. I continually referred back to this book as different aspects of HTML were covered in the courses I was following. I'm currently in the middle of a couple of courses on images and I am still referring back to this book.
 
-Later on, I also found [<i>Learning Web Design<i>](https://learningwebdesign.com) by Jennifer Robbins (the 5th edition only came out last year and so it is quite up-to-date). I really, really like this book. In fact, if I were to recommend one book that I've come across for learning web design it would be this one. OK, it may look a little more textbook than the Duckett book, but its very readable, really comprehensive, up-to-date (at the time of writing this), and is still pretty nice to look at.
+Later on, I also found [<i>Learning Web Design</i>](https://learningwebdesign.com) by Jennifer Robbins (the 5th edition only came out last year and so it is quite up-to-date). I really, really like this book. In fact, if I were to recommend one book that I've come across for learning web design it would be this one. OK, it may look a little more textbook than the Duckett book, but its very readable, really comprehensive, up-to-date (at the time of writing this), and is still pretty nice to look at.
