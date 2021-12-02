@@ -26,6 +26,9 @@ module.exports = (config) => {
     config.addTransform("htmlmin", htmlMinTransform);
   }
 
+  // Passthrough fonts
+  config.addPassthroughCopy("./src/fonts/");
+
   // Returns work items, sorted by display order
   config.addCollection("projects", (collection) => {
     return collection
