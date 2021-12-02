@@ -61,6 +61,10 @@ img {
   box-shadow: var(--shadow-elevation-medium);
 }
 
+::selection {
+  background-color: var(--clr-secondary-500);
+}
+
 /* ==================================================
   Composition
   ================================================== */

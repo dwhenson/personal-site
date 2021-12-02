@@ -25,9 +25,10 @@
       <link rel="stylesheet" media="print" href="{{ item }}?{{ assetHash }}" onload="this.media='all'" />
     {% endfor %}
   {% endif %}
-  <link rel="canonical" href="{{ currentUrl }}" />
+  <link rel="canonical" href="https://{{site.name}}{{ page.url }}index.html" />
 
 <script src="../../js/main.js" async></script>
+
 {% if formValidation %}
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/bouncer/dist/bouncer.polyfills.min.js"></script>
 {% endif %}
