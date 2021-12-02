@@ -1,5 +1,11 @@
 .posts {
   --bespoke-flow-spacer: 1em;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 65ch) minmax(0, 1fr);
+
+  > * {
+    grid-column: 2;
+  }
 
   .post-list {
     --bespoke-flow-spacer: 3em;

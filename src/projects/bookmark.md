@@ -1,6 +1,6 @@
 ---
 title: "Bookmark"
-summary: "This project was a challenge from <a href='https://www.frontendmentor.io'>Frontend Mentor</a>. The specifications required me to build a fully responsive landing page to the designs provided. I used semantic HTML, CSS for layout (CUBE CSS),  with JavaScript for form validation and the tabbed component."
+summary: "This project was a challenge from <a href='https://www.frontendmentor.io'>Frontend Mentor</a>. The specifications required me to build a fully responsive landing page to the designs provided. I used semantic HTML, modern SCSS complied to CSS (based on CUBE CSS),  with JavaScript for form validation and the tabbed component."
 displayOrder: 1
 
 # Content
@@ -35,4 +35,4 @@ There were a couple of tricky aspects to this challenge. Notably the tabbed comp
 
 The burger-menu shown on smaller screens was fiddly. The component is based on Andy Bell's totally full on [fully responsive progressively enhanced burger menu ](https://piccalil.li/tutorial/build-a-fully-responsive-progressively-enhanced-burger-menu/) which is excellent and very robust. Again, if JS should fail for any reason no content is hidden. I also allow the `body` scroll when the menu is open — some people don't like this, but I prefer not to restrict the user if possible.
 
-The page also takes advantage of in-built HTML functionality. The FAQ section is created using the `details-summary` element (which has some nice built in focus states etc.). The `no-validate` attribute is added to the form using JavaScript, which enables a fallback to built-in, browser validation. I in-lined the CSS to improve performance, but some CLS issues remain that I need to look at again.
+The page also takes advantage of in-built HTML functionality. The FAQ section is created using the `details-summary` element (which has built in focus states). The `no-validate` attribute is added to the form using JavaScript, which enables a fallback to built-in, browser validation. I in-lined the CSS to improve performance, but some CLS issues remain that I need to look at again.

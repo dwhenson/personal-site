@@ -8,7 +8,13 @@
 {# If this is a tag, grab those items instead as one large collection #}
 {% if tag %}
   {% set postListItems = collections[tag] | reverse %}
-  {% set pageHeaderTitle = 'Posts tagged with “' + tag + '”' %}
+  {% set pageHeaderTitle = 'Posts tagged “' + tag + '”' %}
+
+  {% if tag === "Learning" %}
+    {% set pageHeaderSummary = learning %}
+  {% endif %}
+
+
 {% endif %}
 
 {% block content %}

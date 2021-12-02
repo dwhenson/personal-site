@@ -15,17 +15,17 @@
   </picture>
   <header class="[ project-intro ] [ flow-content borders ]">
     <div>
-      <h2 class="h1">{{ item.data.title }}</h2>
+      <h1 class="h1">{{ item.data.title }}</h2>
       <p class="roles">{{ item.data.stack }}</p>
     </div>
     <p class="summary">{{ item.data.summary | safe }}</p>
     <a href="{{ item.data.link }}" class="button">Visit Website</a>
-    <a href="{{ item.data.link }}" class="button accent">Source Code</a>
+    <a href="{{ item.data.repo }}" class="button accent">Source Code</a>
   </header>
   <section class="flow-content">
-    <h3 class="h2">Notes and Queries</h3>
+    <h2 class="h2">Notes and Queries</h3>
     <p>{{ item.templateContent | safe }}</p>
-    <h3 class="h2">Static Previews</h3>
+    <h2 class="h2">Static Previews</h3>
     <picture>
       <source
         srcset="{{ item.data.project.previews.desktop.one }}"
