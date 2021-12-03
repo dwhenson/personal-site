@@ -2,8 +2,7 @@
 {% set pageCriticalStyles = ['css/projects.css'] %}
 
 {% block content %}
-{{ content | safe }}
-</p>
+<section>{{ content | safe }}</section>
 <ul class="[ portfolio ] [ flow-section ]" role="list">
   {% for item in collections.projects %}
   <li class="[ portfolio-item ] [ split ]">

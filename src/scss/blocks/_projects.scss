@@ -1,7 +1,6 @@
 .project {
   display: grid;
   gap: max(8vh, 2rem);
-  // margin-block-start: clamp(2.5rem, 15%, 5rem);
 
   @include respond-to("large") {
     grid-template-rows: auto auto;
@@ -10,6 +9,12 @@
     .project-hero {
       grid-area: 1 / -1 / 1 / 1;
     }
+  }
+  // margin-block-start: clamp(2.5rem, 15%, 5rem);
+
+  .roles {
+    margin-block-start: 0.5rem;
+    color: var(--clr-tertiary-500);
   }
 }
 
@@ -38,10 +43,5 @@
   .button {
     align-self: center;
     min-inline-size: 18ch;
-  }
-
-  .roles {
-    margin-block-start: 0.5rem;
-    color: var(--clr-tertiary-500);
   }
 }
