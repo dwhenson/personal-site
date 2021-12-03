@@ -23,9 +23,9 @@
       {% endif %}
 
         <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
-        <h1 class="">{{ pageHeaderTitle }}</h1>
-        <p class="subtitle">{{ subtitle }}</p>
-        <p class="lead">{{ lead }}</p>
+        <h1 class="">{{ pageHeaderTitle | safe }}</h1>
+        <p class="subtitle">{{ subtitle | safe }}</p>
+        <p class="lead">{{ lead | safe }}</p>
     </section>
 
 
@@ -37,7 +37,7 @@
   {% if recommendedPosts %}
     <section class="recommended-posts">
       {% set postListItems = recommendedPosts %}
-      {% set postListHeadline = 'Other posts you might like' %}
+      {% set postListHeadline = 'Other posts' %}
       {% include "partials/posts-list.html" %}
     </section>
   {% endif %}

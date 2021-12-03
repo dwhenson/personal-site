@@ -63,11 +63,19 @@ img {
 
 code {
   font-family: "Courier New", Courier, monospace;
-  color: var(--clr-tertiary-500);
   font-weight: 700;
+  color: var(--clr-tertiary-500);
 }
 
 q {
+  font-style: italic;
+}
+
+blockquote {
+  padding-inline-start: 2em;
+  border-inline-start: 10px solid var(--clr-secondary-500);
+  // font-family: "BioRhyme", "Times New Roman", Times, serif;
+  font-weight: 700;
   font-style: italic;
 }
 
