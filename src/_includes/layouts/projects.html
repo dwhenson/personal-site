@@ -19,7 +19,13 @@
           src="{{ item.data.portfolio.mobile }} "
           width="622"
           height="576"
-          alt="{{ item.data.title }} landing page" />
+          alt="{{ item.data.title }} landing page"
+
+          {% if (item.data.displayOrder > 1) %}
+            loading="lazy"
+          {% endif %}
+
+          />
       </picture>
     </div>
     <div class="[ portfolio-text ] [ flow-content borders ]">
