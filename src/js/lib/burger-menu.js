@@ -38,21 +38,21 @@ class BurgerMenu extends HTMLElement {
       this.state.enabled = contentRect.width <= this.maxWidth;
     });
 
-    // We want to watch the parent like a hawk
+    // Observe parent with for changes
     observer.observe(this.parentNode);
   }
 
   render() {
     this.innerHTML = `
-			<div class="burger-menu" data-element="burger-root">
-				<button class="burger-menu__trigger" data-element="burger-menu-trigger" type="button" aria-label="Open menu">
-					<span class="burger-menu__bar" aria-hidden="true"></span>
-				</button>
-				<div class="burger-menu__panel" data-element="burger-menu-panel">
-					${this.initialMarkup}
-				</div>
-			</div>
-		`;
+      <div class="burger-menu" data-element="burger-root">
+        <button class="burger-menu__trigger" data-element="burger-menu-trigger" type="button" aria-label="Open menu">
+          <span class="burger-menu__bar" aria-hidden="true"></span>
+        </button>
+        <div class="burger-menu__panel" data-element="burger-menu-panel">
+          ${this.initialMarkup}
+        </div>
+      </div>
+    `;
 
     this.postRender();
   }
@@ -119,20 +119,17 @@ class BurgerMenu extends HTMLElement {
 
   manageFocus() {
     if (!this.state.enabled) {
-      for (const element of this.focusableElements)
-        element.removeAttribute("tabindex");
+      for (const element of this.focusableElements) element.removeAttribute("tabindex");
       return;
     }
 
     switch (this.state.status) {
       case "open":
-        for (const element of this.focusableElements)
-          element.removeAttribute("tabindex");
+        for (const element of this.focusableElements) element.removeAttribute("tabindex");
         break;
       case "closed":
         for (const element of [...this.focusableElements].filter(
-          (element) =>
-            element.getAttribute("data-element") !== "burger-menu-trigger"
+          (element) => element.getAttribute("data-element") !== "burger-menu-trigger"
         ))
           element.setAttribute("tabindex", "-1");
         break;

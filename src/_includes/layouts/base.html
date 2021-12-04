@@ -18,12 +18,14 @@
   {% endif %}
   <link rel="stylesheet" media="print" href="/fonts/fonts.css?{{ assetHash }}" onload="this.media='all'" />
 <!-- JS -->
+<!-- Set file paths depending on nesting -->
 {% if not (tag) or (pagination.pageNumber > 0)  %}
   <script src="../../js/main.js" async></script>
 {% endif %}
 {% if (tag) or (pagination.pageNumber > 0)  %}
   <script src="../../../js/main.js" async></script>
 {% endif %}
+<!-- If the form exists then fetch bouncer -->
 {% if formValidation %}
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/bouncer/dist/bouncer.polyfills.min.js"></script>
 {% endif %}
@@ -41,6 +43,7 @@
 
   {% include "partials/site-foot.html" %}
 
+<!-- Instantiate form validation if form exists -->
   {% if formValidation %}
   <script>
      var validate = new Bouncer('form');

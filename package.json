@@ -1,9 +1,9 @@
 {
   "author": "Dave Henson",
-  "description": "FEM Challenge - Minimalist Portfolio",
+  "description": "Dave Henson Personal Website",
   "version": "1.0.0",
   "keywords": [],
-  "name": "minimalist-portfolio",
+  "name": "dave-henson-personal-site",
   "main": "index.html",
   "scripts": {
     "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",

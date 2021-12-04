@@ -23,7 +23,7 @@ Honestly, I wouldn’t worry about build tools and things unless you are either 
 
 If you are just getting started and just want to focus on getting things built and not worry too much about the whole build step thing, my advice is just use [CodeKit](https://codekitapp.com/). It just works, has a nice friendly interface, and I suspect that there’s probably no need for anything else if you really look into exploring it’s full functionality. I only moved on from CodeKit when I started using Eleventy and things got a bit conflicted.
 
-### Gulp: Next level up,
+### Gulp: Next level up
 
 If you are OK with JavaScript then you will find learning Gulp much easier. I think technically Gulp is a task runner rather than a build tool (that is you set up the build tasks in it and it then runs the different tasks for you - you can do this for any tasks that needn't be build related). The best description of what Gulp is I’ve come across is from Andy Bell:
 

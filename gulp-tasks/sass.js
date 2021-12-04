@@ -18,16 +18,13 @@ const criticalStyles = new Set([
 
 // Takes the arguments passed by `dest` and determines where the output file goes
 const calculateOutput = ({ history }) => {
-  // By default, we want a CSS file in our dist directory, so the
-  // HTML can grab it with a <link />
+  // By default, we want a CSS file in our dist directory, so the HTML can grab it with a <link />
   let response = "./dist/css";
 
   // Get everything after the last slash
   const sourceFileName = /[^/]*$/.exec(history[0])[0];
 
-  // If this is critical CSS though, we want it to go
-  // to the _includes directory, so nunjucks can include it
-  // directly in a <style>
+  // If critical CSS go to the _includes directory, so nunjucks can include directly in a <style>
   if (criticalStyles.has(sourceFileName)) {
     response = "./src/_includes/css";
   }
@@ -35,8 +32,7 @@ const calculateOutput = ({ history }) => {
   return response;
 };
 
-// The main Sass method grabs all root Sass files,
-// processes them, then sends them to the output calculator
+// Processes sass files, then sends them to the output calculator
 const sass = () => {
   return src("./src/scss/*.scss")
     .pipe(sassProcessor().on("error", sassProcessor.logError))
