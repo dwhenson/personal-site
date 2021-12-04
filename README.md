@@ -1,22 +1,14 @@
 # Personal Site
 
-## Objectives
+The code for [my personal site](https://www.dwhenson.com/) built using [Eleventy](https://www.11ty.dev/), the CSS structure follows largely follows [CUBE CSS](https://cube.fyi/). I also use Andy Bell's [fully responsive progressively enhanced burger menu ](https://piccalil.li/tutorial/build-a-fully-responsive-progressively-enhanced-burger-menu/) and Chris Ferdinandi's [bouncer](https://github.com/cferdinandi/bouncer) for form validation.
 
-Create site that demonstrates skills etc
+Any comments or suggestions for improvements are most welcome. My site's [contact page](https://dwhenson.com/contact/) is the best way to do this.
 
-## Lessons learnt
+## Roadmap
 
-- 💡 XX
-
-## Challanges
-
-- ⚠️ XXX.
-
-## Future learning
-
-- 📚 Keep going with 11ty!!
-
-## Resources
-
-- 🔗 I used Andy Bell's totally full on [fully responsive progressively enhanced burger menu ](https://piccalil.li/tutorial/build-a-fully-responsive-progressively-enhanced-burger-menu/) which is excellent and very robust.
-- 🔗 I used Andy Bell's totally full on [Learn Eleventy from Scratch Course ](https://piccalil.li/course/learn-eleventy-from-scratch/) which is excellent, really in-depth and free!. It should probably be called learn 11ty, SASS, gulp, some accessibility stuff and how to structure CSS...
+- [] Add CDN for images
+- [] Add some whimsical animations
+- [] Review cost/benefits of self-hosting bouncer
+- [] Add some funkiness to the hero section
+- [] Add RSS feed
+- [] Consider adding in Netlify analytics
