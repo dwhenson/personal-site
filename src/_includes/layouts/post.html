@@ -3,9 +3,7 @@
 
 {% set pageHeaderTitle = title %}
 {% set recommendedPosts = helpers.getSiblingContent(collections.posts, page) %}
-
 {% set pageHeaderSummary %}
-
 {% endset %}
 
 {% block content %}
@@ -22,24 +20,24 @@
         </ul>
       {% endif %}
 
-        <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
-        <h1 class="">{{ pageHeaderTitle | safe }}</h1>
-        <p class="subtitle">{{ subtitle | safe }}</p>
-        <p class="lead">{{ lead | safe }}</p>
+      <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
+      <h1 class="">{{ pageHeaderTitle | safe }}</h1>
+      <p class="subtitle">{{ subtitle | safe }}</p>
+      <p class="lead">{{ lead | safe }}</p>
     </section>
 
 
     <section class="post-body flow-content">
       {{ content | safe }}
     </section>
-  </article>
+</article>
 
-  {% if recommendedPosts %}
-    <section class="recommended-posts">
-      {% set postListItems = recommendedPosts %}
-      {% set postListHeadline = 'Other posts' %}
-      {% include "partials/posts-list.html" %}
-    </section>
+{% if recommendedPosts %}
+  <section class="recommended-posts">
+    {% set postListItems = recommendedPosts %}
+    {% set postListHeadline = 'Other posts you might like' %}
+    {% include "partials/posts-list.html" %}
+  </section>
   {% endif %}
 
 {% endblock %}
