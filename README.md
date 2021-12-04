@@ -7,8 +7,7 @@ Any comments or suggestions for improvements are most welcome. My site's [contac
 ## Roadmap
 
 - [] Add CDN for images
-- [] Add some [whimsical animations](
-  see https://css-tricks.com/a-handy-little-system-for-animated-entrances-in-css/)
+- [] Add some [whimsical animations](https://css-tricks.com/a-handy-little-system-for-animated-entrances-in-css/)
 - [] Review cost/benefits of self-hosting bouncer
 - [] Add some funkiness to the hero section
 - [] Add RSS feed
