@@ -7,19 +7,12 @@
   {% for item in collections.projects %}
   <li class="[ portfolio-item ] [ split ]">
     <div class="portfolio-image">
-<!--       <picture>
-        <source
-          srcset="{{ item.data.portfolio.desktop }}"
-          media="(min-width: 65em)" />
-        <source
-          srcset="{{ item.data.portfolio.tablet }}"
-          media="(min-width: 40em)" /> -->
         <img
           src="{{ item.data.portfolio.mobile }}"
           srcset="{{ item.data.portfolio.desktop }} 1080w,
                   {{ item.data.portfolio.tablet }} 678w,
                   {{ item.data.portfolio.mobile }} 622w"
-          sizes="(min-width: 40em) 50vw, 100vw"
+          sizes="(min-width: 40em) calc(50vw - 8rem), 100vw"
           width="622"
           height="576"
           alt="{{ item.data.title }} landing page"
@@ -28,9 +21,8 @@
             loading="lazy"
           {% endif %}
           />
-      <!-- </picture> -->
     </div>
-    <div class="[ portfolio-text ] [ flow-content borders ]">
+    <div class="[ portfolio-text ] [ flow-content ]">
       <h2 class="h1">{{ item.data.title }}</h2>
       <p>{{ item.data.summary | safe }}</p>
       <a href="/project/{{ item.data.title | slug }}/index.html" class="button"
