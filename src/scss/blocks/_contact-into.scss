@@ -8,8 +8,8 @@
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     // HACK to fix alignment on each section
-    h2 + .contact-text,
-    h2 + .form {
+    .h1 + .contact-text,
+    .h1 + .form {
       margin-block-start: 0;
     }
   }
