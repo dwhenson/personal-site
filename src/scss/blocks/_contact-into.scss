@@ -1,7 +1,3 @@
-// .contact-into {
-//   margin-block-start: clamp(2.5rem, 15%, 5rem);
-// }
-
 .contact-intro,
 .contact-form {
   @include respond-to("large") {

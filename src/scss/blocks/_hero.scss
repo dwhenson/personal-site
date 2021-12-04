@@ -14,10 +14,7 @@
 
   .hero-image {
     @include respond-to("large") {
-      z-index: 1;
       grid-area: 1 / 2 / -1 / -1;
-      // align-self: end;
-      // justify-self: end;
     }
   }
 
@@ -25,9 +22,6 @@
     @include respond-to("large") {
       grid-area: 1 / 1 / -1 / 2;
       align-self: start;
-      // inline-size: 45ch;
-      // padding-block-start: clamp(1rem, 5%, 2rem);
-      // padding-inline-end: clamp(1rem, 5%, 2rem);
       background-color: var(--clr-neutral-100);
     }
 

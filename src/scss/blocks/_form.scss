@@ -29,18 +29,9 @@
 
     &::placeholder {
       font-weight: 400;
-      color: var(--clr-neutral-300);
+      color: var(--clr-neutral-400);
     }
   }
-
-  // textarea {
-  //   position: relative;
-
-  //   // &::placeholder {
-  //   //   position: absolute;
-  //   //   inset-block-start: 1em;
-  //   // }
-  // }
 
   .error-container {
     min-block-size: 1.5em;

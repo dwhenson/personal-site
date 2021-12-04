@@ -1,7 +1,5 @@
 .portfolio {
   @include respond-to("medium") {
-    // margin-block-start: clamp(2.5rem, 15%, 5rem);
-
     li:nth-of-type(even) {
       flex-direction: row-reverse;
     }
