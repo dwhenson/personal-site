@@ -1,18 +1,23 @@
 
 <article class="project">
-  <picture class="project-hero">
-    <source
+  <div class="project-hero">
+<!--     <source
       srcset="{{ item.data.project.hero.desktop }}"
       media="(min-width: 65em)" />
     <source
       srcset="{{ item.data.project.hero.tablet }}"
-      media="(min-width: 40em)" />
+      media="(min-width: 40em)" /> -->
     <img
       src="{{ item.data.project.hero.mobile }}"
+      srcset="{{ item.data.project.hero.desktop }} 2220w,
+              {{ item.data.project.hero.tablet }} 1378w,
+              {{ item.data.project.hero.mobile }} 622w"
+      sizes="100vw"
       width="622"
       height="280"
-      alt="{{ item.data.title }} landing page" />
-  </picture>
+      alt="{{ item.data.title }} Preview of landing page."
+      />
+  </div>
   <header class="[ project-intro ] [ flow-content borders ]">
     <div>
       <h1 class="h1">{{ item.data.title }}</h1>
@@ -26,7 +31,30 @@
     <h2 class="h2">Notes and Queries</h2>
     <p>{{ item.templateContent | safe }}</p>
     <h2 class="h2">Static Previews</h2>
-    <picture>
+    <img
+      src="{{ item.data.project.hero.mobile.one }}"
+      srcset="{{ item.data.project.previews.desktop.one }} 1270w,
+              {{ item.data.project.previews.tablet.one }} 1374w,
+              {{ item.data.project.previews.mobile.one }} 626w"
+      sizes="(min-width: 65em) 50vw, 100vw"
+      width="622"
+      height="392"
+      alt="{{ item.data.title }} Preview of landing page hero section"
+      loading="lazy"
+      />
+      <img
+        src="{{ item.data.project.hero.mobile.two }}"
+        srcset="{{ item.data.project.previews.desktop.two }} 1270w,
+                {{ item.data.project.previews.tablet.two }} 1374w,
+                {{ item.data.project.previews.mobile.two }} 626w"
+        sizes="(min-width: 65em) 50vw, 100vw"
+        width="622"
+        height="392"
+        alt="{{ item.data.title }} Preview of mobile pages."
+        loading="lazy"
+        />
+
+<!--     <picture>
       <source
         srcset="{{ item.data.project.previews.desktop.one }}"
         media="(min-width: 65em)" />
@@ -38,8 +66,8 @@
         width="622"
         height="392"
         alt="{{ item.data.title }} landing page" loading="lazy" />
-    </picture>
-    <picture>
+    </picture> -->
+<!--     <picture>
       <source
         srcset="{{ item.data.project.previews.desktop.two }}"
         media="(min-width: 65em)" />
@@ -51,6 +79,6 @@
         width="622"
         height="392"
         alt="{{ item.data.title }} landing page" loading="lazy" />
-    </picture>
+    </picture> -->
   </section>
 </article>
