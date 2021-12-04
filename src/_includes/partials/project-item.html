@@ -1,12 +1,6 @@
 
 <article class="project">
   <div class="project-hero">
-<!--     <source
-      srcset="{{ item.data.project.hero.desktop }}"
-      media="(min-width: 65em)" />
-    <source
-      srcset="{{ item.data.project.hero.tablet }}"
-      media="(min-width: 40em)" /> -->
     <img
       src="{{ item.data.project.hero.mobile }}"
       srcset="{{ item.data.project.hero.desktop }} 2220w,
@@ -18,7 +12,8 @@
       alt="{{ item.data.title }} Preview of landing page."
       />
   </div>
-  <header class="[ project-intro ] [ flow-content borders ]">
+
+  <header class="[ project-intro ] [ flow-content ]">
     <div>
       <h1 class="h1">{{ item.data.title }}</h1>
       <p class="roles">{{ item.data.stack }}</p>
@@ -27,6 +22,7 @@
     <a href="{{ item.data.link }}" class="button">Visit Website</a>
     <a href="{{ item.data.repo }}" class="button accent">Source Code</a>
   </header>
+
   <section class="flow-content">
     <h2 class="h2">Notes and Queries</h2>
     <p>{{ item.templateContent | safe }}</p>
@@ -53,32 +49,5 @@
         alt="{{ item.data.title }} Preview of mobile pages."
         loading="lazy"
         />
-
-<!--     <picture>
-      <source
-        srcset="{{ item.data.project.previews.desktop.one }}"
-        media="(min-width: 65em)" />
-      <source
-        srcset="{{ item.data.project.previews.tablet.one }}"
-        media="(min-width: 40em)" />
-      <img
-        src="{{ item.data.project.previews.mobile.one }}"
-        width="622"
-        height="392"
-        alt="{{ item.data.title }} landing page" loading="lazy" />
-    </picture> -->
-<!--     <picture>
-      <source
-        srcset="{{ item.data.project.previews.desktop.two }}"
-        media="(min-width: 65em)" />
-      <source
-        srcset="{{ item.data.project.previews.tablet.two }}"
-        media="(min-width: 40em)" />
-      <img
-        src="{{ item.data.project.previews.mobile.two }}"
-        width="622"
-        height="392"
-        alt="{{ item.data.title }} landing page" loading="lazy" />
-    </picture> -->
   </section>
 </article>

@@ -2,9 +2,9 @@
 {% set pageCriticalStyles = ['css/project.css'] %}
 
 {% block content %}
-{%- for item in pagination.items %}
-{% include "partials/project-item.html" %}
-{% include "partials/pagination-projects.html" %}
-{% endfor -%}
+  {%- for item in pagination.items %}
+    {% include "partials/project-item.html" %}
+    {% include "partials/pagination-projects.html" %}
+  {% endfor -%}
 
 {% endblock %}
