@@ -6,3 +6,11 @@
   from = "/*"
   to = "/404/index.html"
   status = 404
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    cache-control = '''
+    max-age=365000000,
+    public
+    immutable'''
