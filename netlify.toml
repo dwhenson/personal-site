@@ -8,7 +8,7 @@
   status = 404
 
 [[headers]]
-  for = "/fonts/*"
+  for = "/fonts/*.woff2"
   [headers.values]
     cache-control = '''
     max-age=365000000,
