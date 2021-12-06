@@ -3,7 +3,7 @@
   src: local("BioRhyme"), url("biorhyme-bold-webfont.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   src: local("Work Sans"), url("worksans-regular-webfont.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   src: local("Work Sans"), url("worksans-bold-webfont.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   src: local("Work Sans"), url("worksans-italic-webfont.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -35,5 +35,5 @@
   src: local("Work Sans"), url("worksans-bolditalic-webfont.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
