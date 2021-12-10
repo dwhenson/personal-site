@@ -1,11 +1,11 @@
 ---
 title: Lessons Learnt Making my First Proper Website
-sub-title: It’s a big job —even with a relatively simple site.
+subtitle: It’s a big job —even with a relatively simple site.
 lead: The list of little jobs, tweaks and enhancements seems to go on forever. All I can suggest is make a list and take them on one at a time.
 date: 2021-12-08
 tags:
-  - “Learning”
-  - “Making”
+  - Learning
+  - Making
 ---
 
 It’s not finished by a long way, but the site you are reading this on is my first attempt at building something from scratch with no design brief or guidance to follow. A total “blank canvas”. Pretty intimidating stuff! Once I got started and into the technical stuff I really enjoyed it; the main issue now is that I think I could go on tweaking things forever…
@@ -42,7 +42,7 @@ I’d not tried Netlify before, but wanted to as I’d heard a lot of good thing
 
 Finally, we get to talk about actually building the site. I’d done other sites approaching a similar size and complexity before, but not quite at this level. That said, although it took a while, scaffolding out the site was actually OK as I was only focused on that side of things and as I’d already dealt with the design and other details.
 
-What actually got to me, and still needs sorting, is the long-tail of things that need to be sorted in order for a site to be considered close to completion, and have, what I hope would be, a <q>polished</q> feel to it. I still have a long todo list of things that I’d like to address on the repos’s readme and I am sure I am missing many more.
+What actually got to me, and still needs sorting, is the long-tail of things that need to be sorted in order for a site to be considered close to completion, and have, what I hope would be, a polished feel to it. I still have a long todo list of things that I’d like to address on the repos’s readme and I am sure I am missing many more.
 
 On the design side of things, this included addressing hover, active, selected states, transitions on buttons and other elements, styles that I missed when setting up the CSS for links, quotes, blockquotes. On the development side, testing in browsers and screen readers, sorting font loading (still not happy), dealing with image loading, and performance.
 
