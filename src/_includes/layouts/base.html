@@ -20,14 +20,14 @@
 <!-- JS -->
 <!-- Set file paths depending on nesting -->
 {% if not (tag) or (pagination.pageNumber > 0)  %}
-  <script src="../../js/main.js" async></script>
+  <script async src="../../js/main.js" type="module"></script>
 {% endif %}
 {% if (tag) or (pagination.pageNumber > 0)  %}
-  <script src="../../../js/main.js" async></script>
+  <script async src="../../../js/main.js" type="module"></script>
 {% endif %}
 <!-- If the form exists then fetch bouncer -->
 {% if formValidation %}
-<script src="https://cdn.jsdelivr.net/gh/cferdinandi/bouncer/dist/bouncer.polyfills.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/cferdinandi/bouncer/dist/bouncer.polyfills.min.js"></script>
 {% endif %}
 
 <link rel="canonical" href="https://{{site.name}}{{ page.url }}index.html" />
