@@ -1,3 +1,5 @@
+/* NOTE File not currently in use as trying inlined styles instead */
+
 @font-face {
   font-family: "BioRhyme";
   src: local("BioRhyme"), url("biorhyme-bold-webfont.woff2") format("woff2");

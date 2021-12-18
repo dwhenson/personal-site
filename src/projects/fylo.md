@@ -1,7 +1,6 @@
 ---
 title: "Fylo"
-summary:
-  " This project was built in pure HTML and CSS. I had mobile and desktop designs to
+summary: " This project was built in pure HTML and CSS. I had mobile and desktop designs to
   work to and built it so that it was fully-responsive. I took a mobile-first approach
   and used modern CSS like Flexbox and Grid for layout purposes."
 displayOrder: 4
@@ -14,9 +13,9 @@ repo: "https://github.com/dwhenson/frontend-mentor/tree/master/28.%20fylo-landin
 
 # Images
 portfolio:
-  mobile: "../../images/portfolio/mobile/image-portfolio-fylo@2x.jpg"
-  tablet: "../../images/portfolio/tablet/image-portfolio-fylo@2x.jpg"
-  desktop: "../../images/portfolio/desktop/image-portfolio-fylo@2x.jpg"
+  mobile: "https://ik.imagekit.io/dwhenson/personal-site/portfolio/mobile/image-portfolio-fylo_2x_zDJGn02Vigb.jpg?updatedAt=1639820387659"
+  tablet: "https://ik.imagekit.io/dwhenson/personal-site/portfolio/tablet/image-portfolio-fylo_2x_olJ8YY2va.jpg?updatedAt=1639820374577"
+  desktop: "https://ik.imagekit.io/dwhenson/personal-site/portfolio/desktop/image-portfolio-fylo_2x_dS4AX12BU.jpg?updatedAt=1639820377924"
 
 project:
   hero:
