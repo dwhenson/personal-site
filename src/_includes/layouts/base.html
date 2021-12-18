@@ -7,8 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>{{ title if title else pagination.items[0].template.parsed.name | capitalize }} - {{ site.name }}</title>
-  <link rel="icon" href="../../images/favicon-dwh.png">
   <meta name="description" content="A self-taught, frontend developer focused on building fast, easy to-use and accessible websites"/>
+  <link rel="icon" href="../../images/favicon-dwh.png">
+  <!-- Preload critical fonts early -->
+  <link rel="preload" href="../../fonts/biorhyme-bold-webfont.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../fonts/worksans-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
   <!-- CSS -->
   <style>{% include "partials/fonts.css" %}</style>
   <style>{% include "css/critical.css" %}</style>
@@ -17,9 +20,11 @@
       <style>{% include item %}</style>
     {% endfor %}
   {% endif %}
+<!-- Removed while trying linined font css  -->
 <!-- <link rel="stylesheet" media="print" href="/fonts/fonts.css?{{ assetHash }}" onload="this.media='all'" /> -->
+
 <!-- JS -->
-<!-- Set file paths depending on nesting -->
+<!-- Set file paths depending on level of nesting -->
 {% if not (tag) or (pagination.pageNumber > 0)  %}
   <script async src="../../js/main.js" type="module"></script>
 {% endif %}
