@@ -12,25 +12,25 @@ repo: "https://github.com/dwhenson/frontend-mentor/tree/master/17.%20insure-land
 
 # Images
 portfolio:
-  mobile: "../../images/portfolio/mobile/image-portfolio-insure@2x.jpg"
-  tablet: "../../images/portfolio/tablet/image-portfolio-insure@2x.jpg"
-  desktop: "../../images/portfolio/desktop/image-portfolio-insure@2x.jpg"
+  mobile: "https://ik.imagekit.io/dwhenson/personal-site/portfolio/mobile/image-portfolio-insure_2x_esT3W95Cp.jpg?updatedAt=1639820389412"
+  tablet: "https://ik.imagekit.io/dwhenson/personal-site/portfolio/tablet/image-portfolio-insure_2x_cUxzXQxm8fw.jpg?updatedAt=1639820367578"
+  desktop: "https://ik.imagekit.io/dwhenson/personal-site/portfolio/desktop/image-portfolio-insure_2x_e4sN9sGYU.jpg?updatedAt=1639820384351"
 
 project:
   hero:
-    mobile: "../../images/project/mobile/image-insure-hero@2x.jpg"
-    tablet: "../../images/project/tablet/image-insure-hero@2x.jpg"
-    desktop: "../../images/project/desktop/image-insure-hero@2x.jpg"
+    mobile: "https://ik.imagekit.io/dwhenson/personal-site/project/insure/mobile-image-insure-hero_2x_HvPbnv4oL.jpg?updatedAt=1639892629487"
+    tablet: "https://ik.imagekit.io/dwhenson/personal-site/project/insure/tablet-image-insure-hero_2x_MKoL7WnvU.jpg?updatedAt=1639892638292"
+    desktop: "https://ik.imagekit.io/dwhenson/personal-site/project/insure/desktop-image-insure-hero_2x_Kgp-_fzgQ.jpg?updatedAt=1639892637274"
   previews:
     mobile:
-      one: "../../images/project/mobile/image-insure-preview-1@2x.jpg"
-      two: "../../images/project/mobile/image-insure-preview-2@2x.jpg"
+      one: "https://ik.imagekit.io/dwhenson/personal-site/project/insure/mobile-image-insure-preview-1_2x_JHqIkgOdq.jpg?updatedAt=1639892635356"
+      two: "https://ik.imagekit.io/dwhenson/personal-site/project/insure/mobile-image-insure-preview-2_2x_0bTV39CkC.jpg?updatedAt=1639892637411"
     tablet:
-      one: "../../images/project/tablet/image-insure-preview-1@2x.jpg"
-      two: "../../images/project/tablet/image-insure-preview-2@2x.jpg"
+      one: "https://ik.imagekit.io/dwhenson/personal-site/project/insure/tablet-image-insure-preview-1_2x_5Es0Ea9PI.jpg?updatedAt=1639892639874"
+      two: "https://ik.imagekit.io/dwhenson/personal-site/project/insure/tablet-image-insure-preview-2_2x_6OXmIMqOD.jpg?updatedAt=1639892633652"
     desktop:
-      one: "../../images/project/desktop/image-insure-preview-1@2x.jpg"
-      two: "../../images/project/desktop/image-insure-preview-2@2x.jpg"
+      one: "https://ik.imagekit.io/dwhenson/personal-site/project/insure/desktop-image-insure-preview-1_2x_H8SL7Kzef.jpg?updatedAt=1639892634173"
+      two: "https://ik.imagekit.io/dwhenson/personal-site/project/insure/desktop-image-insure-preview-2_2x_E0B5Rt471fS.jpg?updatedAt=1639892636445"
 ---
 
 This project was a front-end challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.
