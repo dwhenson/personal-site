@@ -19,19 +19,19 @@ portfolio:
 
 project:
   hero:
-    mobile: "../../images/project/mobile/image-fylo-hero@2x.jpg"
-    tablet: "../../images/project/tablet/image-fylo-hero@2x.jpg"
-    desktop: "../../images/project/desktop/image-fylo-hero@2x.jpg"
+    mobile: "https://ik.imagekit.io/dwhenson/personal-site/project/fylo/mobile-image-fylo-hero_2x_TV0DiF5cg.jpg?updatedAt=1639891329644"
+    tablet: "https://ik.imagekit.io/dwhenson/personal-site/project/fylo/tablet-image-fylo-hero_2x_oFlZ-5tK0.jpg?updatedAt=1639891338410"
+    desktop: "https://ik.imagekit.io/dwhenson/personal-site/project/fylo/desktop-image-fylo-hero_2x_G65n7yjQW.jpg?updatedAt=1639891333301"
   previews:
     mobile:
-      one: "../../images/project/mobile/image-fylo-preview-1@2x.jpg"
-      two: "../../images/project/mobile/image-fylo-preview-2@2x.jpg"
+      one: "https://ik.imagekit.io/dwhenson/personal-site/project/fylo/mobile-image-fylo-preview-1_2x_KY3AtCUAX.jpg?updatedAt=1639891331378"
+      two: "https://ik.imagekit.io/dwhenson/personal-site/project/fylo/mobile-image-fylo-preview-2_2x_3PXbRwJPe.jpg?updatedAt=1639891327183"
     tablet:
-      one: "../../images/project/tablet/image-fylo-preview-1@2x.jpg"
-      two: "../../images/project/tablet/image-fylo-preview-2@2x.jpg"
+      one: "https://ik.imagekit.io/dwhenson/personal-site/project/fylo/tablet-image-fylo-preview-1_2x_TB9qKIy1EBd.jpg?updatedAt=1639891328227"
+      two: "https://ik.imagekit.io/dwhenson/personal-site/project/fylo/tablet-image-fylo-preview-2_2x_F7hCgNVQi.jpg?updatedAt=1639891341178"
     desktop:
-      one: "../../images/project/desktop/image-fylo-preview-1@2x.jpg"
-      two: "../../images/project/desktop/image-fylo-preview-2@2x.jpg"
+      one: "https://ik.imagekit.io/dwhenson/personal-site/project/fylo/desktop-image-fylo-preview-1_2x_GhO7nUGwg9W.jpg?updatedAt=1639891317032"
+      two: "https://ik.imagekit.io/dwhenson/personal-site/project/fylo/desktop-image-fylo-preview-2_2x_KQnR8dJdh.jpg?updatedAt=1639891335186"
 ---
 
 This project was a front-end challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.
