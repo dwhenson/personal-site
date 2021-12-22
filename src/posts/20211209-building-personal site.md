@@ -52,4 +52,4 @@ That’s just stuff I’ve done. The todo list goes on…
 
 Overall I spent a totally of around 38 hours building the site. This includes everything from npm install to the moment I’m writing this. I think the bulk of the site was complete in about 30 hours. Since then I’ve been fiddling around down in the details. Most of this has probably been trying to fix the FOUT that I’m still not happy with!
 
-Overall I’ve already learnt a lot making this site, and now I have something to work with I’m super excited about trying to take things further and improve both its design and performance. I want to try a CDN for images, service workers for fonts, and add in some fun animations.I guess a personal site is never really finished? And that’s just fine with me.
+Overall I’ve already learnt a lot making this site, and now I have something to work with I’m super excited about trying to take things further and improve both its design and performance. I want to try a CDN for images, service workers for fonts, and add in some fun animations. I guess a personal site is never really finished? And that’s just fine with me.
