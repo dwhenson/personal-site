@@ -6,10 +6,10 @@ Any comments or suggestions for improvements are most welcome. My site's [contac
 
 ## Roadmap
 
-- [] Add CDN for images
+- [x] Add CDN for images
+- [x] Add service worker for offline access, fonts and images
 - [] Think about social media meta tags
+- [] Add RSS feed
 - [] Add some [whimsical animations](https://css-tricks.com/a-handy-little-system-for-animated-entrances-in-css/)
 - [] Review cost/benefits of self-hosting bouncer
 - [] Add some funkiness to the hero section
-- [] Add RSS feed
-- [] Consider adding in Netlify analytics
