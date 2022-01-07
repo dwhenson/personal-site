@@ -61,12 +61,11 @@
           offline.innerHTML =
             `<ul class="[ post-list ] [ flow-content ]" role="list">
               ${keys.map(function(key) {
-                console.log(key)
                 // If the item isn't an HTML file, skip to the next one
                 // This is only needed if you're keeping everything in one cache
                 if (!key.headers.get('Accept').includes('text/html') || key.url.includes('offline/')) return '';
                 // Otherwise, create a list item with a link to the page
-                return `<li class="post-list-item"><a href="${key.url}">${key.url.slice(22, -1)}</a></li>`;
+                return `<li class="post-list-item"><a href="${key.url}">${key.url.slice(21, -1)}</a></li>`;
               }).join('')}
             </ul>`;
 
