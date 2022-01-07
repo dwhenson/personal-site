@@ -26,16 +26,15 @@ module.exports = (config) => {
     config.addTransform("htmlmin", htmlMinTransform);
   }
 
-  // Passthrough fonts
+  // Passthroughs
   config.addPassthroughCopy("./src/fonts/");
+  config.addPassthroughCopy("./src/sw.js");
 
   // Returns work items, sorted by display order
   config.addCollection("projects", (collection) => {
     return collection
       .getFilteredByGlob("./src/projects/*.md")
-      .sort((a, b) =>
-        Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1
-      );
+      .sort((a, b) => (Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1));
   });
 
   // Returns a collection of blog posts in reverse date order

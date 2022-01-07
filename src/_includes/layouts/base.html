@@ -47,11 +47,23 @@
 
   {% include "partials/site-foot.html" %}
 
-<!-- Instantiate form validation if form exists -->
-  {% if formValidation %}
   <script>
+  // Register service worker if supported
+  if (navigator && navigator.serviceWorker) {
+    // Register the service worker
+    navigator.serviceWorker.register('../sw.js');
+
+    // Cleanup old cache on page load
+    if (navigator.serviceWorker.controller) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.controller.postMessage('cleanUp');
+      });
+    }
+  }
+  // Instantiate form validation if form exists
+  {% if formValidation %}
      var validate = new Bouncer('form');
+  {% endif %}
   </script>
-{% endif %}
 </body>
 </html>
