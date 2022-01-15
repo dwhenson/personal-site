@@ -52,6 +52,7 @@
       navigator.serviceWorker.register('/sw.js');
 
       // Display a list of cached pages
+      // NOTE Changed from CF boilerplate and will need updating manuall on version change
       caches.open('1.0.0_pages').then(function (cache) {
         cache.keys().then(function (keys) {
 

@@ -3,12 +3,13 @@
 <style>
 @font-face {
   font-family: "Work Sans";
-  {% if not (tag) or (pagination.pageNumber > 0)  %}
+/*  {% if not (tag) or (pagination.pageNumber > 0)  %}
     src: local("Work Sans"), url("../../fonts/worksans-italic-webfont.woff2") format("woff2");
   {% endif %}
   {% if (tag) or (pagination.pageNumber > 0)  %}
     src: local("Work Sans"), url("../../../fonts/worksans-italic-webfont.woff2") format("woff2");
-  {% endif %}
+  {% endif %}*/
+  src: local("Work Sans"), url("/fonts/worksans-italic-webfont.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -16,12 +17,13 @@
 
 @font-face {
   font-family: "Work Sans";
-  {% if not (tag) or (pagination.pageNumber > 0)  %}
+/*  {% if not (tag) or (pagination.pageNumber > 0)  %}
   src: local("Work Sans"), url("../../fonts/worksans-bold-webfont.woff2") format("woff2");
   {% endif %}
   {% if (tag) or (pagination.pageNumber > 0)  %}
   src: local("Work Sans"), url("../../../fonts/worksans-bold-webfont.woff2") format("woff2");
-  {% endif %}
+  {% endif %}*/
+  src: local("Work Sans"), url("/fonts/worksans-bold-webfont.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -29,12 +31,13 @@
 
 @font-face {
   font-family: "Work Sans";
-  {% if not (tag) or (pagination.pageNumber > 0)  %}
+/*  {% if not (tag) or (pagination.pageNumber > 0)  %}
   src: local("Work Sans"), url("../../fonts/worksans-bolditalic-webfont.woff2") format("woff2");
   {% endif %}
   {% if (tag) or (pagination.pageNumber > 0)  %}
   src: local("Work Sans"), url("../../../fonts/worksans-bolditalic-webfont.woff2") format("woff2");
-  {% endif %}
+  {% endif %}*/
+  src: local("Work Sans"), url("/fonts/worksans-bolditalic-webfont.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -42,12 +45,13 @@
 
 @font-face {
   font-family: "Work Sans";
-  {% if not (tag) or (pagination.pageNumber > 0)  %}
-  src: local("Work Sans"), url("../../fonts/worksans-regular-webfont.woff2") format("woff2");
+  /*{% if not (tag) or (pagination.pageNumber > 0)  %}*/
+/*  src: local("Work Sans"), url("../../fonts/worksans-regular-webfont.woff2") format("woff2");
   {% endif %}
   {% if (tag) or (pagination.pageNumber > 0)  %}
   src: local("Work Sans"), url("../../../fonts/worksans-regular-webfont.woff2") format("woff2");
-  {% endif %}
+  {% endif %}*/
+  src: local("Work Sans"), url("/fonts/worksans-regular-webfont.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -55,12 +59,13 @@
 
 @font-face {
   font-family: "BioRhyme";
-  {% if not (tag) or (pagination.pageNumber > 0)  %}
+/*  {% if not (tag) or (pagination.pageNumber > 0)  %}
   src: local("BioRhyme"), url("../../fonts/biorhyme-bold-webfont.woff2") format("woff2");
   {% endif %}
   {% if (tag) or (pagination.pageNumber > 0)  %}
   src: local("BioRhyme"), url("../../../fonts/biorhyme-bold-webfont.woff2") format("woff2");
-  {% endif %}
+  {% endif %}*/
+  src: local("BioRhyme"), url("/fonts/biorhyme-bold-webfont.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;

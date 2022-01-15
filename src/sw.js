@@ -162,6 +162,8 @@ self.addEventListener("fetch", function (event) {
   // Images & Fonts
   // Offline-first
   if (request.headers.get("Accept").includes("image") || request.url.includes("woff2")) {
+    // NOTE this return should not really be needed - working fix but not ideal
+    if (request.headers.get("Accept").includes("text/html")) return;
     event.respondWith(
       caches.match(request).then(function (response) {
         return (
@@ -194,6 +196,7 @@ self.addEventListener("message", function (event) {
   // Only run on cleanUp messages
   if (event.data !== "cleanUp") return;
   // Trim the cache
+  // NOTE changed from CF boilerplate from seperate 'page' and 'image' caches
   trimCache("pageID", limits.pages);
   trimCache("imgID", limits.imgs);
 });
