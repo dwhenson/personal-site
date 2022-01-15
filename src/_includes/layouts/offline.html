@@ -39,7 +39,7 @@
   <main tabindex="-1" id="main-content" class="flow-section">
     <h1>You're Offline</h1>
         <p>It looks like you’re not online right now.</p>
-        <p>Don’t worry! You can still access some of them pages you looked at before going offline.</p>
+        <p>Don’t worry! You can still access some of the pages you looked at before going offline.</p>
         <div id="offline-content"></div>
   </main>
 
@@ -52,12 +52,23 @@
       navigator.serviceWorker.register('/sw.js');
 
       // Display a list of cached pages
-      // NOTE Changed from CF boilerplate and will need updating manuall on version change
+      // NOTE Changed cache from CF boilerplate and will need updating manuall on version change
       caches.open('1.0.0_pages').then(function (cache) {
         cache.keys().then(function (keys) {
 
           // Get the HTML element
           const offline = document.querySelector('#offline-content');
+
+          const formatUrl = function(url) {
+            // const base = "http:dwhenson.com/"
+            const base = "http://localhost:8080/"
+            // Insert value for home page
+            if (url === base) return "home"
+            // Remove 'index.html' from project pages
+            if (url.includes("project/")) return url.slice(Math.max(0, url.indexOf('project/')), -11)
+            // Remove initial url string and final "/"
+            return url.slice(Math.max(0, url.indexOf('0/') + 2), -1)
+          }
 
           // Inject a list of URLs into the DOM
           offline.innerHTML =
@@ -67,12 +78,10 @@
                 // This is only needed if you're keeping everything in one cache
                 if (!key.headers.get('Accept').includes('text/html') || key.url.includes('offline/')) return '';
                 // Otherwise, create a list item with a link to the page
-                return `<li class="post-list-item"><a href="${key.url}">${key.url.slice(21, -1)}</a></li>`;
-              }).join('')}
+                return `<li class="post-list-item"><a href="${key.url}">${formatUrl(key.url)}</a></li>`;
+              }).sort().join('')}
             </ul>`;
-
         });
-
       });
     }
   </script>
