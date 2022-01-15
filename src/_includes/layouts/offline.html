@@ -68,7 +68,7 @@
             if (url.includes("project/")) return url.slice(Math.max(0, url.indexOf('project/')), -11)
             // Remove initial url string and final "/"
             // return url.slice(Math.max(0, url.indexOf('0/') + 2), -1) // Development string
-            return url.slice(Math.max(0, url.indexOf('n/') + 2), -1)
+            return url.slice(Math.max(0, url.indexOf('.com/') + 5), -1)
           }
 
           // Inject a list of URLs into the DOM
