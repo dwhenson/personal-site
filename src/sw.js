@@ -9,7 +9,7 @@ const version = "1.0.0";
 const coreID = `${version}_core`;
 const pageID = `${version}_pages`;
 const imgID = `${version}_img`;
-const cacheIDs = [coreID, pageID, imgID];
+const cacheIDs = new Set([coreID, pageID, imgID]);
 
 // Max number of files in cache
 const limits = {
@@ -55,7 +55,7 @@ function trimCache(key, max) {
 function isValid(response, goodFor) {
   if (!response) return false;
   const fetched = response.headers.get("sw-fetched-on");
-  if (fetched && parseFloat(fetched) + goodFor > new Date().getTime()) return true;
+  if (fetched && Number.parseFloat(fetched) + goodFor > Date.now()) return true;
   return false;
 }
 
@@ -87,7 +87,7 @@ self.addEventListener("activate", function (event) {
       .then(function (keys) {
         // Get the keys of the caches to remove
         const keysToRemove = keys.filter(function (key) {
-          return !cacheIDs.includes(key);
+          return !cacheIDs.has(key);
         });
 
         // Delete each cache
@@ -141,7 +141,10 @@ self.addEventListener("fetch", function (event) {
 
   // CSS & JavaScript
   // Offline-first
-  if (request.headers.get("Accept").includes("text/css") || request.headers.get("Accept").includes("text/javascript")) {
+  if (
+    request.headers.get("Accept").includes("text/css") ||
+    request.headers.get("Accept").includes("text/javascript")
+  ) {
     event.respondWith(
       caches.match(request).then(function (response) {
         return (
@@ -186,12 +189,11 @@ self.addEventListener("fetch", function (event) {
 // Trim caches over a certain size
 self.addEventListener("message", function (event) {
   // Make sure the event was from a trusted site
-  // if (event.origin !== 'https://your-awesome-website.com') return;
+  if (event.origin !== "https://dwhenson.com") return;
 
   // Only run on cleanUp messages
   if (event.data !== "cleanUp") return;
-
   // Trim the cache
-  trimCache("pages", limits.pages);
-  trimCache("img", limits.imgs);
+  trimCache("pageID", limits.pages);
+  trimCache("imgID", limits.imgs);
 });
