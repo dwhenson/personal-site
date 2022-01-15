@@ -22,13 +22,8 @@
   {% endif %}
 
 <!-- JS -->
-<!-- Set file paths depending on level of nesting -->
-{% if not (tag) or (pagination.pageNumber > 0)  %}
-  <script async src="../../js/main.js" type="module"></script>
-{% endif %}
-{% if (tag) or (pagination.pageNumber > 0)  %}
-  <script async src="../../../js/main.js" type="module"></script>
-{% endif %}
+  <script async src="/js/main.js" type="module"></script>
+
 <!-- If the form exists then fetch bouncer -->
 {% if formValidation %}
 <script defer src="https://cdn.jsdelivr.net/gh/cferdinandi/bouncer/dist/bouncer.polyfills.min.js"></script>
@@ -51,7 +46,7 @@
   // Register service worker if supported
   if (navigator && navigator.serviceWorker) {
     // Register the service worker
-    navigator.serviceWorker.register('../sw.js');
+    navigator.serviceWorker.register('/sw.js');
 
     // Cleanup old cache on page load
     if (navigator.serviceWorker.controller) {
