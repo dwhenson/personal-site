@@ -191,12 +191,12 @@ self.addEventListener("fetch", function (event) {
 // Trim caches over a certain size
 self.addEventListener("message", function (event) {
   // Make sure the event was from a trusted site
-  if (event.origin !== "https://dwhenson.com") return;
+  // if (event.origin !== "https://dwhenson.com") return;
 
   // Only run on cleanUp messages
   if (event.data !== "cleanUp") return;
   // Trim the cache
   // NOTE changed from CF boilerplate from seperate 'page' and 'image' caches
-  trimCache("pageID", limits.pages);
-  trimCache("imgID", limits.imgs);
+  trimCache("1.0.0_pages", limits.pages);
+  trimCache("1.0.0_img", limits.imgs);
 });
