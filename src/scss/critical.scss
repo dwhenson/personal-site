@@ -71,10 +71,15 @@ q {
   font-style: italic;
 }
 
+figure.quote {
+  margin-block-start: calc(var(--spacer) * 3);
+  margin-block-end: calc(var(--spacer) * 3);
+}
+
 blockquote {
   padding-inline-start: 2em;
   border-inline-start: 10px solid var(--clr-secondary-500);
-  // font-family: "BioRhyme", "Times New Roman", Times, serif;
+  font-family: "BioRhyme", "Times New Roman", Times, serif;
   font-weight: 700;
   font-style: italic;
 }
