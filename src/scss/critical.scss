@@ -84,6 +84,10 @@ blockquote {
   font-style: italic;
 }
 
+em {
+  font-weight: 700;
+}
+
 ::selection {
   background-color: var(--clr-secondary-500);
   color: var(--clr-primary-500);
