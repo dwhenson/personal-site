@@ -1,5 +1,5 @@
 ---
-title: How to Add a Service Worker to a Website
+title: How I Added a Service Worker to this Website
 subtitle: It’s not as mysterious as it sounds.
 lead: Write some JavaScript and put it at the top level of your site's folder structure and let it work it's magic.
 date: 2022-01-17
