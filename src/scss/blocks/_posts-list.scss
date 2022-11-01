@@ -16,6 +16,7 @@
   display: block;
   transition: color 150ms;
   text-decoration: none;
+  max-width: min(60ch, 100%);
 
   &:hover h2 {
     color: var(--clr-tertiary-500);
