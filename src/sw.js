@@ -19,6 +19,7 @@ const limits = {
 
 // Core assets
 const coreAssets = [
+  "/",
   "offline/",
   "fonts/biorhyme-bold-webfont.woff2",
   "fonts/worksans-regular-webfont.woff2",
@@ -110,7 +111,8 @@ self.addEventListener("fetch", function (event) {
 
   // Bug fix
   // https://stackoverflow.com/a/49719964
-  if (event.request.cache === "only-if-cached" && event.request.mode !== "same-origin") return;
+  if (event.request.cache === "only-if-cached" && event.request.mode !== "same-origin")
+    return;
 
   // HTML files
   // Network-first
@@ -196,7 +198,7 @@ self.addEventListener("message", function (event) {
   // Only run on cleanUp messages
   if (event.data !== "cleanUp") return;
   // Trim the cache
-  // NOTE changed from CF boilerplate from seperate 'page' and 'image' caches
+  // NOTE changed from CF boilerplate from separate 'page' and 'image' caches
   trimCache("1.0.0_pages", limits.pages);
   trimCache("1.0.0_img", limits.imgs);
 });
