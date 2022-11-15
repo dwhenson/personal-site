@@ -1,27 +1,35 @@
-{% extends "layouts/base.html" %}
-{% set pageCriticalStyles = ['css/home.css'] %}
-{% block content %}
+{% extends "layouts/base.html" %} {% set pageCriticalStyles = ['css/home.css'] %} {% block
+content %}
 <section class="hero">
-  <div class="hero-image">
-    {% include "partials/hero-min.svg" %}
-  </div>
+  <div class="hero-image">{% include "partials/hero-min.svg" %}</div>
 
   <div class="[ hero-text ] [ flow-content ]">
-    <h1>Hey, <a href="#about" class="highlight">I’m Dave</a>. I love building fast, easy<span>-</span>to<span>-</span>use and accessible websites<span>.</span> </h1>
+    <h1>
+      Hey, <a href="#about" class="highlight">I’m Dave</a>. I love building fast,
+      easy<span>-</span>to<span>-</span>use and accessible websites<span>.</span>
+    </h1>
     <a class="button home" href="#about">About Me</a>
   </div>
 </section>
 
 <section class="about">
-  <div class="about-image">
-    {% include "partials/about-min.svg" %}
-  </div>
+  <div class="about-image">{% include "partials/about-min.svg" %}</div>
 
   <div id="about" class="[ about-text ] [ flow-content borders ]">
     <h2 class="h1">About Me</h2>
-    <p>I’m a frontend developer with a strong focus on accessible HTML, modern CSS and vanilla JavaScript. I also have experience with static site generators (this site is built using Eleventy). At the moment I am increasing my knowledge of website performance and and how browsers work, while dipping my toes into UX and UI design.</p>
+    <p>
+      I’m a frontend developer with a strong focus on accessible HTML, modern CSS and
+      vanilla JavaScript. I also have experience with static site generators (this site is
+      built using Eleventy). At the moment I am increasing my knowledge of Javascript
+      fundementals, learning React, and getting familar with how testing works.
+    </p>
 
-     <p>I’m based in Nottingham, England. I have plenty of experience working with remote teams. I aim to transition into a frontend developer role over the next year or so. I’m looking for my next opportunity as a frontend web developer starting in 2022. Please do <a href="/contact/">get in touch</a>; I'd love to hear about what you are working on and if I could help.
+    <p>
+      I’m based in Nottingham, England. I have plenty of experience working with remote
+      teams. I aim to transition into a frontend developer role over the next year or so
+      and I’m looking for my next opportunity starting in 2023. Please do
+      <a href="/contact/">get in touch</a>; I'd love to hear about what you are working on
+      and if I could help.
     </p>
     <a href="/projects/" class="button accent">View Projects</a>
   </div>
