@@ -69,7 +69,7 @@ I tend to "scope" each block with a class name (e.g. `.footer`) and then select 
 
 Some blocks (like a `nav`) might need quite a bit of code, but I find that most standard sections don't need too much code – especially if you've used custom properties with a fallback pattern (one of my all-time favourite CSS things) and have made good use of your utility classes. With that and a final review, your page should be looking pretty close by now.
 
-# Keep Organised!
+### Keep Organised!
 
 This is quite a lot, and you will need a system to keep your CSS organised. If you can use SCSS that will help on more complicated pages as you can split things up into smaller files, otherwise the CSS file can get very, very long. But honestly, you will need a system.
 
