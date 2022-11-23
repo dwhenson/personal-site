@@ -18,13 +18,13 @@ The main aim is to try to get a feel for the overall design. This might feel lik
 
 ## Let's Add Some HTML!
 
-When adding HTML to a design I typically start with the desktop version of the designs, as these are normally the most complicated. I spent some time [learning HTML] and it was time really well spent. It's not complicated, and a little bit of time invested in learning it will take you a long way.
+When adding HTML to a design I typically start with the desktop version of the designs, as these are normally the most complicated. I spent some time [learning HTML](https://dwhenson.com/posts/what-the-html/) and it was time really well spent. It's not complicated, and a little bit of time invested in learning it will take you a long way.
 
 So assuming you've done that, I'd suggest doing something like the following:
 
 ### Structure Your Headings
 
-The general advice is on `h1` per page so start with that. If this matches the page title that helps tie things up nicely. After you've identified your main heading then review the remaining content and add sub-headings starting with your `h2`'s throughout the document, and then under them, any `h3`'s that may be needed, and so on (usually three heading levels is enough).
+The general advice is one `h1` per page so start with that. If this matches the page title that helps tie things up nicely. After you've identified your main heading, review the remaining content and add sub-headings starting with your `h2`'s throughout the document, and then under them, any `h3`'s that may be needed, and so on (usually three heading levels is enough).
 
 Remember: **don't skip any levels between headings**. As this can mess things up for people using assistive technology to access your site. Keep in mind we are just doing structure at the moment, and not thinking about design at all. I find it useful to start a local server at this stage so I can see how the page looks with no styles added (hint: the structure should be clear based on the in-built styles).
 
@@ -48,24 +48,26 @@ OK, so this is a bit like advising you to draw [the rest of the owl](https://i.i
 
 Here are some approaches that I use to help with this part of the process:
 
-- Stick to the tried and tested pattern of using a `ul` and `li` / `a` elements for the navigation links. It's done everywhere and is what users expect
+- I suggest sticking to the tried and tested pattern of using a `ul` and `li` / `a` elements for the navigation links. It's done everywhere and is what users expect.
 - Add `aria-current='page'` to the navigation link that represents the page you are working on. This is good for accessibility and we can use it for styling later on.
-- Be careful with `button` elements. Remember, we are adding structure not designing here. If it takes you to another page (has a `href` attribute) it's a link!
+- Be careful with `button` elements. Remember, we are adding structure not designing here. If it takes you to another page (i.e. it has a `href` attribute) it's a link!
 - I like to divide logical sub-sections up using the `section` element. It doesn't add anything semantically used in this way but it helps me when reading my code.
-- Doing that means I can save my `div` elements for things like wrappers/containers that might be needed to help with layout or design.
+- Doing that means I can save my `div` elements for things like wrappers/containers that might be needed to help with layout or design. That way when I see a `div` I already have a general idea why it's there.
 
 ### Dealing with Images
 
 You'll also want to add your images at this stage. Again, this is pretty straightforward, but here are some things to keep in mind when doing this:
 
-- Firstly, is it a background image (i.e. it has text or something over it)? Leave it aside for the moment, we'll add it with CSS later
+- Firstly, is it a background image (i.e. it has text or something over it)? Leave it aside for the moment, we'll add it with CSS later.
 - Is it an `svg`? If so, inline it straight into your HTML. This avoids a network request and means that we can style parts of it using CSS later on.
-- If you are using the `img` element add `alt` text, and width and height attributes. This is needed for people using assistive technology and performance.
+- If you are using the `img` element add `alt` text, and `width` and `height` attributes. This helps people using assistive technology and performance.
 - Are you given different images depending on screen size? You'll probably want to use the `picture` element. Here's [a great write-up on how to use it](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/)!
-- Are you given different versions of the same image to use depending on screen size? You'll want to use the `srcset` attribute. The article above will help!
+- Are you given different versions of the same image to use depending on screen size? You'll want to use the `srcset` attribute. See the article above!
 
-These last two points can appear a little complicated to deal with and I have to admit I am not 100% confident working with either approach, but as images account for such as a large proportion of page size it's worth considering.
+These last two points can appear a little complicated to deal with and I have to admit I am not 100% confident working with either approach, but as images account for such as a large proportion of page size it's worth spending some time on.
 
 ### Things We've not Covered
 
 This assumes a pretty simple page, with pretty simple interactions required. There's a lot more to consider once you get on to marking up more complicated pages. [Inclusive Components by Heydon Pickering](https://inclusive-components.design/) is a great place to get started.
+
+With that you should be ready to [add some styles and sort your layout](https://dwhenson.com/posts/design-to-pixel-pretty-close-part-2/)!
