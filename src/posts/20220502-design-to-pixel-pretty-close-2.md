@@ -14,7 +14,7 @@ I've been carrying around a few bits of paper that I refer to when translating a
 
 Well, you've just done all that [marking up the document in HTML](https://dwhenson.com/posts/design-to-pixel-pretty-close-part-1/) so you deserve a little rest. What I tend to focus on here is how the layout changes between screen sizes, any elements that appear out of flow (e.g. sticky footers, floating buttons etc). I also try to see if I can see any common, repeated patterns that might be candidates for a utility class.
 
-One thing to clarify at the outset is that I aim for (Pixel Pretty Close)[https://www.joshwcomeau.com/css/pixel-perfection/] not pixel perfect when working on a page. I want to [be the browser's mentor, not its manager](https://buildexcellentwebsit.es/) and would take a fluid, intrinsically designed site of a ridge 'pixel perfect' creation any day. Of course, your opinion (or that of the designer you are working with) may differ.
+One thing to clarify at the outset is that I aim for [Pixel Pretty Close](https://www.joshwcomeau.com/css/pixel-perfection/) not pixel perfect when working on a page. I want to [be the browser's mentor, not its manager](https://buildexcellentwebsit.es/) and would take a fluid, intrinsically designed site of a ridge 'pixel perfect' creation any day. Of course, your opinion (or that of the designer you are working with) may differ.
 
 ## Let's Add some CSS!
 
